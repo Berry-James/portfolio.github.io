@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+    {% block head %}{% endblock %}
+    <script defer src="../../scripts/study.js" type="module"></script>
+</head>
+<body class="body-study">
+{% include "partials/navbar.njk" %}
+<main id="swup" class="transition-fade">
+<section class="study-main">
+    <section class="study-header">
+            {% block headImg %}{% endblock %}
+            <h1>{% block title %}{% endblock %}</h1>
+    </section>
+    
+    <section class="study-subtext">
+        <div class="study-subtext-container">
+            <h3>{% block subtext %}{% endblock %}</h3>
+        </div>
+        <div class="study-img-wrapper header-img">
+            <img src={% block imgOne %}{% endblock %}>
+        </div>
+        <div class="study-tools-wrapper">
+            {% block tools %}{% endblock %}
+        </div>
+        <hr>
+    </section>
+
+    <section class="study-body">
+        <article class="study-intro">
+            <h2 class="subtitle">Introduction</h2>
+            <p>{% block intro %}{% endblock %}</p>
+        </article>
+        <div class="study-img-wrapper">
+            {% block afterIntroImg %}{% endblock %}
+        </div>
+        <h2 class="subtitle design-title">Design</h2>
+        <article class="study-design">
+            <p>{% block design %}{% endblock %}</p>
+            <div class="study-img-wrapper img-stack">
+                {% block designImg %}{% endblock %}
+            </div>
+        </article>
+        <h2 class="subtitle">Technical</h2>
+        <article class="study-technical">
+            {% block technical %}{% endblock %}
+        </article>
+        <hr>
+    </section>
+
+    <section class="study-conclusion">
+        <h2 class="subtitle">Conclusion</h2>
+        <p>{% block conclusion %}{% endblock %}</p>
+    </section>
+</section>
+</main>
+</body>
+</html>

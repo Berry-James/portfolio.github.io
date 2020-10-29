@@ -1,0 +1,135 @@
+@import '../var.scss';
+
+.small-projects-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+}
+
+
+@keyframes phoneSlide {
+    to {
+        transform: translateX(0vw);
+    }
+}
+.small-project-container {
+    height: 800px;
+    width: 100%;
+
+    #img-one{
+        transform: translateX(-20vw) rotate(-5deg);
+    }
+    #img-two {
+        transform: translateX(20vw) rotate(5deg);
+    }
+
+    img {
+        padding: 10px;
+        height: 90%;
+        
+        animation: phoneSlide 1s linear;
+        /* Pause the animation */
+        animation-play-state: paused;
+        /* Bind the animation to scroll */
+        animation-delay: calc(var(--scroll) * -1s);
+        /* These last 2 properites clean up overshoot weirdness */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+}
+
+.small-project-title {
+    margin-top: 15px;
+    color: white;
+    font-size: 2rem;
+}
+
+.mobile-showcase {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    margin-top: 10vh;
+    
+    h1 {
+        font-size: 8vw;
+        position: relative;
+        align-self: flex-end;
+        font-family: $heading;
+        text-shadow: 0 0 1rem black;
+    }
+
+    img {
+        width: 20%;
+        position: absolute;
+        filter: drop-shadow(0 0 1rem rgba(0,0,0,1));
+    }
+
+    #img-one {
+        animation: img-one 1s linear;
+        /* Pause the animation */
+        animation-play-state: paused;
+        /* Bind the animation to scroll */
+        animation-delay: calc(var(--scroll) * -1s);
+        /* These last 2 properites clean up overshoot weirdness */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+    
+    #img-two {
+        animation: img-two 1s linear;
+        /* Pause the animation */
+        animation-play-state: paused;
+        /* Bind the animation to scroll */
+        animation-delay: calc(var(--scroll) * -1s);
+        /* These last 2 properites clean up overshoot weirdness */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    #img-three {
+        animation: img-three 1s linear;
+        /* Pause the animation */
+        animation-play-state: paused;
+        /* Bind the animation to scroll */
+        animation-delay: calc(var(--scroll) * -1s);
+        /* These last 2 properites clean up overshoot weirdness */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    #img-four {
+        animation: img-four 1s linear;
+        /* Pause the animation */
+        animation-play-state: paused;
+        /* Bind the animation to scroll */
+        animation-delay: calc(var(--scroll) * -1s);
+        /* These last 2 properites clean up overshoot weirdness */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes img-one {
+    to {
+        transform: translateX(-150%) rotate(-7.5deg);
+    }
+}
+@keyframes img-two {
+    to {
+        transform: translateX(-50%) rotate(-2.5deg) translateY(-5%);
+    }
+}
+@keyframes img-three {
+    to {
+        transform: translateX(50%) rotate(2.5deg) translateY(-5%);
+    }
+}
+@keyframes img-four {
+    to {
+        transform: translateX(150%) rotate(7.5deg);
+    }
+}

@@ -1,0 +1,28 @@
+@import '../var.scss';
+
+.contact {
+    height: 500px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+        color: white;
+        margin-bottom: 50px;
+        font-family: $heading;
+        font-size: 6rem;
+        font-weight: normal;
+    }
+
+    .social-links {
+        color: white;
+        font-size: 1.5rem;
+        
+        i {
+            margin: 0 10px;
+        }
+    }
+}

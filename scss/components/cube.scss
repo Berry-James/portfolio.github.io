@@ -1,0 +1,100 @@
+@import '../var.scss';
+
+ @keyframes glowAnim {
+   0%{
+     filter: drop-shadow(0 0 0.5rem #007d50);
+   }
+   100% {
+     filter: drop-shadow(0 0 2rem #007d50);
+   }
+ }
+ 
+ .cube-wrap {
+    --size: 30vmin;
+    position: relative;
+    width: 0;
+    height: 0;
+    perspective: 100vmin;
+    animation: glowAnim 4s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 1rem #007d50);
+    z-index: 2;
+  }
+  .cube {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    animation: cube 0.5s linear;
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    
+  }
+  @keyframes cube {
+    to {
+      transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+    }
+  }
+  
+  .side {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    backface-visibility: visible;
+    top: calc(var(--size) * -.5);
+    left: calc(var(--size) * -.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset;
+    
+  }
+  .top {
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+/*     background-blend-mode: multiply;
+    background-color: #007d50; */
+    transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+    
+  }
+  .bottom {
+      
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .left {
+      
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .right {
+      
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .front {
+
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+/*     background-color: #00915e;
+ */    transform: translateZ(calc(var(--size) * .5));
+  }
+  .back {
+    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+    transform: translateZ(calc(var(--size) * -.5));
+  }
+ 
+  @keyframes text {
+    to {
+        transform: translateX(10vw);
+    }
+}
+
+  .projects-title {
+    transform: translateX(-10vw);
+    animation: text 0.5s linear;
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  } 

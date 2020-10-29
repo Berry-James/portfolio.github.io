@@ -1,0 +1,258 @@
+@import '../var.scss';
+
+
+.body-study {
+    background-color: #fff !important;
+    font-family: $studyBody;
+    
+
+}
+
+
+.study-main {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 75px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin: 30px 0px 10px 0px;
+        color: #1f1f1f;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        color: #1f1f1f;
+        font-weight: bold;
+    }
+} 
+
+
+
+ .study-img-wrapper {
+    margin: 35px 0px;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        filter: drop-shadow(0px 0px 10px #a6a6a6);
+        margin: 0px 10px;
+        max-width: 30vw;
+    }
+
+    .phone-img {
+        max-width: 30vw;
+        max-height: 80vh;
+        margin: 0px 10px;
+        transition: 0.2s;
+        
+    }
+    .phone-img:hover {
+        transform: translateY(-10px);
+    }
+} 
+
+.header-img { 
+
+    img {
+        min-width: 40vw;
+        max-width: 70vw;
+
+    }
+    opacity: 0;
+    display: flex;
+    height: auto;
+    justify-self: center;
+}
+
+.subtitle {
+    margin: 25px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+}
+
+
+.study-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 8rem;
+        color: black;
+        z-index: 2;
+        position: relative;
+        margin: 2% auto;
+        justify-self: center;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 8px;
+        text-align: center;
+        line-height: 100%;
+
+    }
+
+    .header-svg {
+        width: 100vw;
+        height: 15vh;
+
+        z-index: 1;
+        
+    }
+}
+
+.study-subtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.study-subtext-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20vw;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    text-align: center;
+}
+
+.study-body{
+    padding: 0 20vw;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.study-conclusion {
+    padding: 0 20vw;
+}
+
+hr {
+    width: 30vw;
+    background-color: #cfcfcf;
+    margin: 35px auto;
+}
+
+.study-tools-wrapper {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    img {
+        height: 4vh;
+        width: auto;
+
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-active-study {
+    background-color: #242424 !important;
+    height: 50px !important;
+    color: white !important;
+}
+
+.study-container {
+   padding-top: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   background-color: #fff;
+
+}
+
+.study-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+    img {
+        transition: 0.5s;
+        cursor: pointer;
+        z-index: 5;
+        position: relative;
+    }
+
+
+    h1 {
+        font-size: 10vh;
+        font-family: $heading;
+        z-index: 2;
+        mix-blend-mode: difference;
+        transition: 0.5s;
+    }
+
+    
+    .bg-circle {
+        position: absolute;
+        left: 50%;
+        border-radius: 250px;
+        background-color: red;
+        z-index: 1;
+        width: 5%;
+        height: 5%;
+        align-self: center;
+    }
+
+}
+
+.study-wrapper:hover {
+
+
+    h1 {
+        bottom: 0;
+    }
+
+    .bg-circle {
+        transition: 0.5s;
+        left: 0%;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+a {
+    color: inherit;
+}
+
+
+
+.background-overlay {
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+

@@ -1,0 +1,183 @@
+@media screen and (max-width: 1020px) {
+    .project-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .project-content-wrapper {
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+        padding: 10vh 0;
+    }
+
+    .project-img-wrapper {
+        width: 80vw;
+    }
+
+    .title-container {
+        h1 {
+            font-size: 3em;
+        }
+    }
+    .hexagons {
+        width: 90vw;
+    }
+
+    .skill-container {
+        width: 90vw;
+    }
+
+    .divider-bar {
+        width: 90vw !important;
+    }
+
+    .small-projects-container {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    // LANDING
+    .landingImg {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .landing-title {
+        font-size: 3rem;
+    }
+
+    .landing-header {
+        font-size: 1.4rem;
+    }
+
+    .scroll-down-container {
+        bottom: 1%;
+    }
+    
+
+    // SKILL SET
+    .divider-bar {
+        h2 {
+            font-size: 5rem;
+        }
+    }
+
+    // CUBE ANIMATION
+    .cube-wrap {
+        position: absolute;
+        --size: 50vmin;
+        z-index: 0;
+      }
+    
+    .cube {
+        animation-play-state: running;
+        animation: cube 10s linear infinite;
+      }
+
+      // PROJECTS
+        
+    .projects-title {
+        font-size: 25vw !important;
+        transform: translateX(0);  
+    }
+
+    .project-img-wrapper {
+        margin: 0;
+        min-width: 90vw;
+    }
+
+    .project-txt-wrapper {
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0 5%;
+        margin: 0;
+
+        .project-icons-wrapper {
+            justify-content: space-evenly;
+        }
+
+        .title-container {
+            font-size: 100vw;
+        }
+
+        h1 {
+            font-size: 20vw;
+        }
+    }
+    
+    // STUDIES
+    .study-body, .study-conclusion {
+        padding: 0 5vw;
+    }
+
+    .img-stack {
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            min-width: 90vw;
+            margin-bottom: 50px;
+        }
+    }
+
+    .header-img {
+        img {
+            min-width: 90vw;
+        }
+    }
+
+    .study-img-wrapper {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .study-subtext-container {
+        padding: 0 5vw;
+        text-align: center;
+    }
+
+    .study-tools-wrapper {
+        width: 90vw;
+        
+        img {
+            height: 30px;
+        }
+    }
+
+    hr {
+        width: 70vw;
+    }
+
+    .study-header {
+        h1 {
+            font-size: 4rem;
+            margin: 5% auto;
+        }
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .entry {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 25px;
+
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,61 @@
+@import '../var.scss';
+
+.hexagon-svg {
+    .a {
+        fill: $green;
+    }
+}
+
+@keyframes svg-glow-anim-recorderly {
+    0% {
+        filter: drop-shadow(0 0 25px rgba(254,152,15, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 50px rgba(254,152,15, 0.8));
+
+    }
+}
+
+@keyframes svg-glow-anim-HPC {
+    0% {
+        filter: drop-shadow(0 0 25px rgba(255,67,67, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 50px rgba(255,67,67, 0.8));
+
+    }
+}
+
+@keyframes svg-glow-anim-HPC {
+    0% {
+        filter: drop-shadow(0 0 25px rgba(255,67,67, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 50px rgba(255,67,67, 0.8));
+
+    }
+}
+
+@keyframes svg-glow-anim-scitech {
+    0% {
+        filter: drop-shadow(0 0 25px rgba(33, 25, 255, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 50px rgba(33, 25, 255, 0.8));
+
+    }
+}
+
+// Glow functions for home page SVGs
+
+.svg-glow-recorderly {
+    animation: svg-glow-anim-recorderly 2s alternate infinite ease-in-out;
+}
+
+.svg-glow-HPC {
+    animation: svg-glow-anim-HPC 2s alternate infinite ease-in-out;
+}
+
+.svg-glow-scitech {
+    animation: svg-glow-anim-scitech 2s alternate infinite ease-in-out;
+}

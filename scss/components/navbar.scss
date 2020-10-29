@@ -1,0 +1,79 @@
+@import '../var.scss';
+
+
+
+.navbar-start {
+
+    a {
+    }
+
+    a:hover {
+        color: inherit;
+        border-bottom: 10px solid #007d50;
+    }
+}
+
+.burger {
+    color: white;
+    position: absolute;
+    right: 15px;
+    margin-left: auto;
+    margin: auto 0;
+    transition: 0s;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.burger:hover {
+    color: $green;
+}
+
+.mobile-hamburger {
+    transform: translateY(500px);
+    opacity: 0;
+    top: 0px;
+    position: fixed;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 20;
+    color: white;
+    box-shadow: 0 0 1em #0f0f0f;
+    padding-bottom: 25px;
+
+    div:first-of-type {
+        margin-top: 60px;
+    }
+
+    a {
+        font-size: 2.5rem;
+        font-family: $body;
+    }
+
+    a:hover {
+        color: $green;
+    }
+
+    .mobile-hamburger-entry {
+        transition: 0.2s;
+        opacity: 0;
+        text-align: center;
+        padding: 2% 0;
+        width: 80vw;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-hamburger-entry:hover {
+        transition: 0.2s;
+        width: 100vw;
+        background-color: #fff;
+
+        a {
+            color: $green;
+        }
+    }
+}
+

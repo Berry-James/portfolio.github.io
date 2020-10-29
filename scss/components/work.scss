@@ -1,0 +1,234 @@
+@import '../var.scss';
+
+.center {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+    transition: 1s;
+}
+
+.work-heading-wrapper {
+    margin-bottom: 75px;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.screen-svg {
+    fill: gray;
+    svg {
+        fill: gray;
+    }
+}
+
+
+
+.project-img-wrapper {
+    position: relative;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    width: 50vw;
+    z-index: 2;
+    margin-right: 20px;
+
+    .project-mobile-mockup {
+        
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 20%;
+        transform: translateX(145%) translateY(-25%);
+        filter: drop-shadow(0 0 1rem black);
+    }
+
+    .project-mobile-mockup:hover {
+        width: 25%;
+        transform: translateX(130%) translateY(-12%);
+        filter: drop-shadow(0 0 3rem goldenrod);
+    }
+
+    img {
+
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        transition: 1s;
+        flex-shrink: 0;
+        filter: drop-shadow(0 0 1rem rgba(0,0,0,0.5));     
+    }
+
+    svg {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        transition: 1s;
+    }
+}
+
+.project-txt-wrapper {
+    display: flex;
+    opacity: 0;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    padding: 20px 10px 10px 20px;
+    flex-shrink: 1;
+    z-index: 1;
+    align-self: flex-start;
+    margin: auto 0;
+
+    .title-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: 'Staatliches', cursive;
+        font-size: 8vw;
+        line-height: 100%;
+    }
+
+
+    h2 {
+        font-family: $title;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: $yellow;
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        color: $yellow;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: $body;
+        font-size: 1rem;
+    }
+
+    a {
+        margin-top: 20px;
+        color: $yellow;
+    }
+    a:hover {
+        font-weight: bold;
+    }
+
+    .case-study-btn {
+        width: 300px;
+        border: 3px solid #fff;
+        transition: 0.2s;
+    }
+
+    .case-study-btn:hover {
+        border: 3px solid $green !important;
+        background-color: transparent !important;
+        color: $green !important;
+        font-weight: normal !important;
+        border-radius: 10px;
+    }
+}
+
+.made-using {
+    margin-top: 15px;
+    font-family: $title;
+}
+
+.project-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.project-container {
+    background-color: #1f1f1f;
+/*     padding: 25vh 0px 25vh;
+ */    box-shadow: 0px 0px 5px #1f1f1f;
+    height: 100vh;
+
+    .recorderly-background, .hpc-background, .scitech-background {
+        z-index: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .project-gradient-overlay {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.7) 100%);
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+}
+
+.project-icons-wrapper {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+
+    img {
+        margin: 5px;
+        height: auto;
+        width: 50px;
+        
+    }
+}
+
+#hpc {
+    background-color: #070707;
+}
+
+
+
+#recorderly-content-wrapper, #HPC-content-wrapper, #scitech-content-wrapper {
+    opacity: 0;
+}
+
+.project-title-container {
+
+    .projects-title {
+/*         opacity: 0;
+ */    }
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .section-title {
+        font-family: 'Staatliches', cursive;
+        color: white;
+        font-size: 13rem;
+        z-index: 1;
+
+    }
+}
+
+.main-section {
+    text-align: center;
+    color: white;
+
+}

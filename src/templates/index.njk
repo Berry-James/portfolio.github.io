@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+        <script defer src="../../scripts/study_index.js" type="module"></script>
+
+    {% block head %}{% endblock %}
+
+    <title>Case Studies</title>
+</head>
+<body>
+{% include "partials/navbar.njk" %}
+<main id="swup" class="transition-fade">
+<div class="study-container">
+
+    <div class="study-wrapper"  data-color="#f9b920">
+        {% block studyOne %}{% endblock %}
+    </div>
+
+    <div class="study-wrapper"  data-color="#ff4045">
+        {% block studyTwo %}{% endblock %}
+    </div>
+
+    <div class="study-wrapper"  data-color="#432ab0">
+        {% block studyThree %}{% endblock %}
+    </div>
+
+    <div class="study-wrapper"  data-color="#525252"> 
+        {% block studyFour %}{% endblock %}
+    </div>
+
+</div>
+</main>
+
+</body>
+</html>

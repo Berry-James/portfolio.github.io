@@ -13,3 +13,7 @@ const observer = new IntersectionObserver(function (entries, observer) {
 
 observer.observe(sectionOne);
 
+
+
+
+

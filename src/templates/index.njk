@@ -10,27 +10,25 @@
 </head>
 <body>
 {% include "partials/navbar.njk" %}
-<main id="swup" class="transition-fade">
 <div class="study-container">
 
-    <div class="study-wrapper"  data-color="#f9b920">
+    <a href="/case-studies/recorderly.html"><div class="study-wrapper"  id="study-wrapper-recorderly" data-color="#f9b920">
         {% block studyOne %}{% endblock %}
-    </div>
+    </div></a>
 
-    <div class="study-wrapper"  data-color="#ff4045">
+    <a href="/case-studies/hpc.html"><div class="study-wrapper"  id="study-wrapper-hpc" data-color="#ff4045">
         {% block studyTwo %}{% endblock %}
-    </div>
+    </div></a>
 
-    <div class="study-wrapper"  data-color="#432ab0">
+    <a href="/case-studies/scitech.html"><div class="study-wrapper" id="study-wrapper-scitech" data-color="#432ab0">
         {% block studyThree %}{% endblock %}
-    </div>
+    </div></a>
 
-    <div class="study-wrapper"  data-color="#525252"> 
+    <a href="/case-studies/travelr.html"><div class="study-wrapper"  id="study-wrapper-travelr" data-color="#525252">
         {% block studyFour %}{% endblock %}
-    </div>
+    </div></a>
 
 </div>
-</main>
 
 </body>
 </html>

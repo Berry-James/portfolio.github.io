@@ -26,7 +26,7 @@ const Burger = {
         let navbar = document.querySelector(".mobile-nav-container");
         let bContainer = document.createElement("div");
         let links = [
-            {name: 'Skills', href: '#skills'},
+            {name: 'About', href: '#skills'},
             {name: 'Work', href: '#work'},
             {name: 'Case Studies', href: '/case-studies/studies.html'},
             {name: 'Contact', href: '#contact'},

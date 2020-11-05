@@ -1,18 +1,6 @@
 import anime from '../node_modules/animejs/lib/anime.es.js';
 import { Study } from '../components/Study.js';
 
-// SWUP
-const swup = new Swup();
-
-// Initialise swup to run script on page content change
-function init() {
-  if (document.querySelector('.study-header')) {
-      Study.observer();
-  }
-}
-
-swup.on('contentReplaced', init())
-
 // intersection observers
 let imgOne = document.querySelector(".study-img-wrapper");
 let imgs = document.querySelectorAll(".study-img-wrapper");

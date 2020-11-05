@@ -24,7 +24,7 @@ const Projects = {
                 ],
                 easing: 'linear',
                 delay: anime.stagger(500),
-                duration: 1000,
+                duration: 500,
 
 
              });         
@@ -80,7 +80,7 @@ const Projects = {
                     {  opacity: 1, translateX: '0px' },
                 ],
                 easing: 'linear',
-                duration: 1000,
+                duration: 800,
 
 
                 });     
@@ -106,14 +106,30 @@ const Projects = {
             anime({
             targets: [wrapper, projectTxt],
             keyframes: [
-                {  opacity: 0, translateX: '-100vw' },
-                {  opacity: 1, translateX: '0px' },
+                {  opacity: 0, translateX: '-100vw', rotate: '5deg' },
+                {  opacity: 1, translateX: '0px', rotate: '0deg' },
             ],
-            easing: 'linear',
-            duration: 1000,
+            easing: 'easeOutQuart',
+            duration: 800,
 
             });     
         },
+    
+    projectImgAnimTravelr: () => {
+        let travelrImgs = document.querySelectorAll(".travelr-img");
+        anime({
+            targets: travelrImgs,
+            keyframes: [
+                { opacity: 0, scale: 0.2 },
+                { opacity: 1, scale: 1 }
+            ],
+            
+            easing: 'spring(1, 80, 10, 0)',
+            delay: anime.stagger(250),
+            duration: 1500,
+        })
+    }
+        
 }
 
 

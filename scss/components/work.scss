@@ -134,6 +134,12 @@
         width: 300px;
         border: 3px solid #fff;
         transition: 0.2s;
+
+        i {
+            position: absolute;
+            left: 5%;
+        }
+        
     }
 
     .case-study-btn:hover {

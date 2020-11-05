@@ -53,14 +53,46 @@
     align-items: space-between;
     justify-content: center;
     margin-top: 10vh;
-    
-    h1 {
-        font-size: 8vw;
-        position: relative;
+
+    .mobile-showcase-text {
+        width: 100%;
+        text-align: center;
+        justify-self: flex-end;
         align-self: flex-end;
-        font-family: $heading;
-        text-shadow: 0 0 1rem black;
+        margin-bottom: 2%;
+        margin-top: 5%;
+        z-index: 10;
+
+        .case-study-btn {
+            width: 300px;
+            border: 3px solid #fff;
+            transition: 0.2s;
+            margin: 1%;
+
+            i {
+                position: absolute;
+                left: 5%;
+            }
+        }
+
+        .case-study-btn:hover {
+            border: 3px solid $green !important;
+            background-color: transparent !important;
+            color: $green !important;
+            font-weight: normal !important;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 8vw;
+            position: relative;
+            align-self: flex-end;
+            font-family: $heading;
+            text-shadow: 0 0 1rem black;
+            line-height: 100%;
+        }
     }
+
 
     img {
         width: 20%;

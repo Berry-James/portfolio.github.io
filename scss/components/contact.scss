@@ -9,6 +9,11 @@
     justify-content: center;
     position: relative;
 
+    p {
+        margin-bottom: 2%;
+        font-family: $body;
+    }
+
     h1 {
         color: white;
         margin-bottom: 50px;

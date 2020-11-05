@@ -12,7 +12,7 @@
 .study-main {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #eeeeee;
 
     
     p {
@@ -176,73 +176,89 @@ hr {
 }
 
 .study-container {
-   padding-top: 25px;
+    margin-top: 52px;
    display: flex;
    flex-direction: column;
    justify-items: center;
-   align-items: center;
-   background-color: #fff;
+   align-items: space-between;
+   background-color: #eeeeee;
 
 }
 
 .study-wrapper {
     display: flex;
     width: 100vw;
-    height: 100vh;
-    align-items: center;
+    height: calc(25vh - 13px);
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #171717;
     
-
-    img {
-        transition: 0.5s;
-        cursor: pointer;
-        z-index: 5;
-        position: relative;
+    a {
+        align-self: flex-start;
+/*         padding-right: 5%; */
+        margin-left: 5vw;
     }
 
+    img {
+        transition: 0.2s;
+        cursor: pointer;
+        z-index: 5;
+        height: 10vh;
+    }
 
     h1 {
         font-size: 10vh;
         font-family: $heading;
         z-index: 2;
-        mix-blend-mode: difference;
-        transition: 0.5s;
+        transition: 0.5s ease-out;
+        margin-left: 20%;
+        position: absolute;
     }
 
-    
     .bg-circle {
         position: absolute;
-        left: 50%;
-        border-radius: 250px;
-        background-color: red;
+        left: 5vw;
+/*         border-radius: 250px;
+ */        background-color: red;
         z-index: 1;
-        width: 5%;
-        height: 5%;
-        align-self: center;
+        width: 0%;
+        height: calc(25vh - 13px);
+        justify-self: flex-end;
+        
     }
-
 }
 
 .study-wrapper:hover {
 
-
     h1 {
-        bottom: 0;
+        mix-blend-mode: difference;
+        transform: translateX(3vw);
     }
 
     .bg-circle {
         transition: 0.5s;
-        left: 0%;
+        transition-delay: 0.1s;
+        animation-timing-function: ease-in-out;
+        right: 0%;
         border-radius: 0px;
         width: 100%;
-        height: 100%;
+        height: calc(25vh - 13px);
+        background-blend-mode: multiply;
+        z-index: 1;
     }
     
 }
 
 a {
     color: inherit;
+    z-index: 6;
+    position: relative;
+    filter: drop-shadow(0 0 0.8rem rgba(0,0,0,0.5));
 }
 
 
@@ -255,4 +271,32 @@ a {
     top: 0;
 }
 
+#study-wrapper-recorderly {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 5vw solid $yellow;
+ 
 
+}
+
+#study-wrapper-recorderly:hover {
+
+}
+
+#study-wrapper-hpc {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 5vw solid #ff4045;
+}
+
+#study-wrapper-scitech {
+    border-left: 5vw solid #432ab0;
+
+}
+
+#study-wrapper-travelr {
+    border-left: 5vw solid #525252;
+
+}

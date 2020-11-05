@@ -1,0 +1,23 @@
+@import '../var.scss';
+
+.fun-projects {
+    width: 100vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+
+    h1 {
+        font-family: $heading;
+        font-size: 10vw;
+    }
+
+    article {
+        background-color: thistle;
+        height: 50%;
+        h1 {
+            font-family: $heading;
+            font-size: 5vw;
+        }
+    }
+
+
+}

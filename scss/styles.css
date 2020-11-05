@@ -224,6 +224,8 @@
   justify-content: center;
   width: 100vw;
   height: 100%;
+  z-index: 2;
+  position: relative;
 }
 
 .project-container {
@@ -232,6 +234,8 @@
    */
   box-shadow: 0px 0px 5px #1f1f1f;
   height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 .project-container .recorderly-background, .project-container .hpc-background, .project-container .scitech-background {
   z-index: 0;
@@ -247,6 +251,7 @@
   position: absolute;
   z-index: 1;
   pointer-events: none;
+  backdrop-filter: blur(5px) brightness(70%);
 }
 
 .project-icons-wrapper {

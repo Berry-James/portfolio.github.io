@@ -14,7 +14,6 @@
             {% block headImg %}{% endblock %}
             <h1>{% block title %}{% endblock %}</h1>
             {% block hexagonL %}{% endblock %}
-
     </section>
     
     <section class="study-subtext">
@@ -41,6 +40,9 @@
         <h2 class="subtitle design-title"><i class="fas fa-paint-brush"></i>Design</h2>
         <article class="study-design">
             <p>{% block design %}{% endblock %}</p>
+            <div class="study-palette-container">
+                {% block palette %}{% endblock %}
+            </div>
             <div class="study-img-wrapper img-stack">
                 {% block designImg %}{% endblock %}
             </div>

@@ -1,0 +1,57 @@
+@import '../var.scss';
+
+.study-palette-container {
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    display: flex;
+
+    label {
+        position: relative;
+        top: -60px;
+    }
+    
+
+    svg {
+        position: relative;
+        width: 150px;
+        filter: drop-shadow(0 0 0.8rem rgba(230, 230, 230, 0.6));
+    }
+    width: 50vw;
+    .recorderly-1 {
+        fill: #f8b920;
+    }
+    .recorderly-2 {
+        fill: #4d4d4d;
+    }
+    .recorderly-3 {
+        fill: #e0e0e0;
+    }
+
+    .hpc-1 {
+        fill: #ff4045;
+    }
+    .hpc-2 {
+        fill: #101010;
+    }
+    .hpc-3 {
+        fill: #343a45;
+    }
+    .hpc-4 {
+        fill: #f1f1f1;
+    }
+
+    .scitech-1 {
+        fill: #432ab0;
+    }
+    .scitech-2 {
+        fill: #56cfe1;
+    }
+    .scitech-3 {
+        fill: #f1f2f3;
+    }
+}

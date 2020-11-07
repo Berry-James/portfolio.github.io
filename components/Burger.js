@@ -25,26 +25,51 @@ const Burger = {
         let burgerBtn = document.querySelector('#burger-button');
         let navbar = document.querySelector(".mobile-nav-container");
         let bContainer = document.createElement("div");
-        let links = [
+        const indexLinks = [
+            {name: 'About', href: 'index.html#skills'},
+            {name: 'Work', href: 'index.html#work'},
+            {name: 'Case Studies', href: './case-studies/studies.html'},
+            {name: 'Contact', href: 'index.html#contact'},
+        ]
+        const elseLinks = [
             {name: 'About', href: '../index.html#skills'},
             {name: 'Work', href: '../index.html#work'},
-            {name: 'Case Studies', href: './case-studies/studies.html'},
+            {name: 'Case Studies', href: './studies.html'},
             {name: 'Contact', href: '../index.html#contact'},
         ]
 
         // Create an entry with a link for each item in 'links' array
-        links.forEach(link => {
-            let entry = document.createElement("div");
-            entry.className = 'mobile-hamburger-entry';
-            let button = document.createElement("a");
-            button.innerText = link.name;
-            button.setAttribute("href", link.href);
-            entry.appendChild(button);
-            bContainer.appendChild(entry);
-            bContainer.addEventListener("click", () => {
-                Burger.remove();
+        if(window.location.pathname != '/index.html') {
+            console.log('NOT INDEX PAGE')
+            elseLinks.forEach(link => {
+                let entry = document.createElement("div");
+                entry.className = 'mobile-hamburger-entry';
+                let button = document.createElement("a");
+                button.innerText = link.name;
+                button.setAttribute("href", link.href);
+                entry.appendChild(button);
+                bContainer.appendChild(entry);
+                bContainer.addEventListener("click", () => {
+                    Burger.remove();
+                })
             })
-        })
+        } else {
+            console.log('INDEX PAGE')
+            console.log(window.location.pathname)
+            indexLinks.forEach(link => {
+                let entry = document.createElement("div");
+                entry.className = 'mobile-hamburger-entry';
+                let button = document.createElement("a");
+                button.innerText = link.name;
+                button.setAttribute("href", link.href);
+                entry.appendChild(button);
+                bContainer.appendChild(entry);
+                bContainer.addEventListener("click", () => {
+                    Burger.remove();
+                })
+            })
+        }
+
 
         // Append links to bContainer div
         bContainer.className = "mobile-hamburger";

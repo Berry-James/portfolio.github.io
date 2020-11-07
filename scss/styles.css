@@ -1457,10 +1457,9 @@ body::-webkit-scrollbar-thumb {
     max-width: 40vw;
   }
 
-  .study-img-wrapper img:last-of-type {
-    display: none;
-  }
-
+  /*     .study-img-wrapper img:last-of-type {
+          display: none;
+      } */
   .study-subtext-container {
     padding: 0 5vw;
     text-align: center;

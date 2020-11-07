@@ -193,29 +193,23 @@ observerAbout.observe(aboutSection);
 
 // BACKGROUND ON LANDING
 particlesJS.load('particles-js', 'assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
   });
 
 particlesJS.load('particles-js-main', 'assets/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
 });
 
 // BACKGROUNDS FOR PROJECTS
 // RECORDERLY
 particlesJS.load('particles-js-recorderly', 'assets/hexagonsR.json', function() {
-  console.log('callback - particles.js config loaded');
 })
 // HPC
 particlesJS.load('particles-js-hpc', 'assets/hexagonsH.json', function() {
-  console.log('callback - particles.js config loaded');
 })
 // SCITECH
 particlesJS.load('particles-js-scitech', 'assets/hexagonsS.json', function() {
-  console.log('callback - particles.js config loaded');
 })
 // TRAVELR
 particlesJS.load('particles-js-travelr', 'assets/hexagonsT.json', function() {
-  console.log('callback - particles.js config loaded');
 })
 
 // BUTTON SHOW/HIDE EXTENSIONS

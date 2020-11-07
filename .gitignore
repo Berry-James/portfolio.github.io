@@ -1,0 +1,5 @@
+**/node_modules
+!**/node_modules/animejs
+!**/node_modules/particles.js
+
+/package-lock.json

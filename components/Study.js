@@ -65,7 +65,7 @@ const Study = {
             observer.observe(img);
         });
 
-        const observerNav = new IntersectionObserver(function (entries, observer) {
+/*         const observerNav = new IntersectionObserver(function (entries, observer) {
             entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 return;
@@ -76,14 +76,13 @@ const Study = {
             });
         }, options);
 
-        observerNav.observe(tools);
+        observerNav.observe(tools); */
 
     },
 
     background: () => {
-        navbar.classList.add('navbar-active-study');
-
-
+/*         navbar.classList.add('navbar-active-study');
+ */
         let backgroundOverlay = document.createElement("div");
         backgroundOverlay.className = "background-overlay";
 
@@ -109,6 +108,10 @@ const Study = {
             })
         });
     },
+
+    navcolor: () => {
+        
+    }
 
 }
 

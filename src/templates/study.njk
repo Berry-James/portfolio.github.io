@@ -5,13 +5,16 @@
     {% block head %}{% endblock %}
     <script defer src="../../scripts/study.js" type="module"></script>
 </head>
-<body class="body-study">
+<body class="body-study" id="{% block page %}{% endblock %}">
 {% include "partials/navbar.njk" %}
 <main id="swup" class="transition-fade">
 <section class="study-main">
     <section class="study-header">
+            {% block hexagonR %}{% endblock %}
             {% block headImg %}{% endblock %}
             <h1>{% block title %}{% endblock %}</h1>
+            {% block hexagonL %}{% endblock %}
+
     </section>
     
     <section class="study-subtext">
@@ -29,20 +32,20 @@
 
     <section class="study-body">
         <article class="study-intro">
-            <h2 class="subtitle">Introduction</h2>
+            <h2 class="subtitle"><i class="far fa-comment-alt" id="{{ pageColor }}"></i>Introduction</h2>
             <p>{% block intro %}{% endblock %}</p>
         </article>
         <div class="study-img-wrapper">
             {% block afterIntroImg %}{% endblock %}
         </div>
-        <h2 class="subtitle design-title">Design</h2>
+        <h2 class="subtitle design-title"><i class="fas fa-paint-brush"></i>Design</h2>
         <article class="study-design">
             <p>{% block design %}{% endblock %}</p>
             <div class="study-img-wrapper img-stack">
                 {% block designImg %}{% endblock %}
             </div>
         </article>
-        <h2 class="subtitle">Technical</h2>
+        <h2 class="subtitle"><i class="fas fa-terminal"></i>Technical</h2>
         <article class="study-technical">
             {% block technical %}{% endblock %}
         </article>

@@ -26,10 +26,10 @@ const Burger = {
         let navbar = document.querySelector(".mobile-nav-container");
         let bContainer = document.createElement("div");
         let links = [
-            {name: 'About', href: '#skills'},
-            {name: 'Work', href: '#work'},
-            {name: 'Case Studies', href: './case-studies/studies.html'},
-            {name: 'Contact', href: '#contact'},
+            {name: 'About', href: '../index.html#skills'},
+            {name: 'Work', href: '../index.html#work'},
+            {name: 'Case Studies', href: '../case-studies/studies.html'},
+            {name: 'Contact', href: '../index.html#contact'},
         ]
 
         // Create an entry with a link for each item in 'links' array

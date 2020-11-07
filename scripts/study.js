@@ -1,5 +1,6 @@
 import anime from '../node_modules/animejs/lib/anime.es.js';
 import { Study } from '../components/Study.js';
+import { Burger } from '../components/Burger.js';
 
 // intersection observers
 let imgOne = document.querySelector(".study-img-wrapper");
@@ -75,3 +76,14 @@ observerNav.observe(tools); */
 // bg colour change
 
 
+// BURGER BUTTON
+const burgerBtn = document.querySelector("#burger-button");
+
+burgerBtn.addEventListener("click", () => {
+  if (document.querySelector(".mobile-hamburger")) {
+    Burger.remove();
+  }
+  else {
+    Burger.show();
+  }
+})

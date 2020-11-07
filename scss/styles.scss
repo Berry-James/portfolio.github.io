@@ -240,8 +240,8 @@ hr {
     position: absolute;
     top: 100vh;
     height: 100vh;
-    z-index: 0;
-    background: rgb(0,0,0);
+    z-index: 1;
+    filter: blur(3px);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,83,53,0.41220238095238093) 80%, rgba(0,125,80,0.5102415966386555) 100%);
 }
 
@@ -249,9 +249,7 @@ hr {
     position: absolute;
     height: 100vh;
     top: 100vh;
-    background: rgb(7,7,7);
-    background: linear-gradient(0deg, rgba(7,7,7,1) 0%, rgba(6,25,18,1) 9%, rgba(4,65,43,0) 80%, rgba(0,125,80,1) 100%);
-    backdrop-filter: blur(2px);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%, rgba(0,125,80,1) 100%);
     width: 100vw;
     z-index: 1;
     pointer-events: none;

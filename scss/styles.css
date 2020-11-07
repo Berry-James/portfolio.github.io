@@ -385,7 +385,7 @@
   font-family: "Staatliches", cursive;
   color: white;
   font-size: 13rem;
-  z-index: 1;
+  z-index: 0;
   position: relative;
 }
 
@@ -1052,7 +1052,7 @@ a {
   perspective: 100vmin;
   animation: glowAnim 4s ease-in-out infinite alternate;
   filter: drop-shadow(0 0 1rem #007d50);
-  z-index: 1;
+  z-index: 0;
 }
 
 .cube {
@@ -1698,8 +1698,8 @@ hr {
   position: absolute;
   top: 100vh;
   height: 100vh;
-  z-index: 0;
-  background: black;
+  z-index: 1;
+  filter: blur(3px);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 83, 53, 0.412202381) 80%, rgba(0, 125, 80, 0.5102415966) 100%);
 }
 
@@ -1707,9 +1707,7 @@ hr {
   position: absolute;
   height: 100vh;
   top: 100vh;
-  background: #070707;
-  background: linear-gradient(0deg, #070707 0%, #061912 9%, rgba(4, 65, 43, 0) 80%, #007d50 100%);
-  backdrop-filter: blur(2px);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%, #007d50 100%);
   width: 100vw;
   z-index: 1;
   pointer-events: none;

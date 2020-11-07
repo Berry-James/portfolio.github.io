@@ -959,7 +959,7 @@ a {
 .cube {
   transform-style: preserve-3d;
   transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
-  animation: cube 0.5s linear;
+  animation: cube 0.8s linear;
   /* Pause the animation */
   animation-play-state: paused;
   /* Bind the animation to scroll */
@@ -985,37 +985,49 @@ a {
 }
 
 .top {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+   */
   /*     background-blend-mode: multiply;
-      background-color: #007d50; */
+   background-color: #007d50; */
   transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  border: 3px solid #007d50;
 }
 
 .bottom {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+   */
   transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  border: 3px solid #007d50;
 }
 
 .left {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+   */
   transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  border: 3px solid #007d50;
 }
 
 .right {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+   */
   transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  border: 3px solid #007d50;
 }
 
 .front {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-  /*     background-color: #00915e;
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
    */
+  /*     background-color: #00915e;
+  */
   transform: translateZ(calc(var(--size) * .5));
+  border: 3px solid #007d50;
 }
 
 .back {
-  background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+  /*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+   */
   transform: translateZ(calc(var(--size) * -.5));
+  border: 3px solid #007d50;
 }
 
 @keyframes text {

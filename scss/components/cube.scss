@@ -8,7 +8,7 @@
      filter: drop-shadow(0 0 2rem #007d50);
    }
  }
- 
+
  .cube-wrap {
     --size: 30vmin;
     position: relative;
@@ -22,7 +22,7 @@
   .cube {
     transform-style: preserve-3d;
     transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
-    animation: cube 0.5s linear;
+    animation: cube 0.8s linear;
     /* Pause the animation */
     animation-play-state: paused;
     /* Bind the animation to scroll */
@@ -49,36 +49,46 @@
     
   }
   .top {
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-/*     background-blend-mode: multiply;
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ *//*     background-blend-mode: multiply;
     background-color: #007d50; */
     transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
-    
+    border: 3px solid $green;
   }
   .bottom {
       
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ */    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+    border: 3px solid $green;
+
   }
   .left {
       
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ */    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+    border: 3px solid $green;
+
   }
   .right {
       
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ */    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+    border: 3px solid $green;
+
   }
   .front {
 
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-/*     background-color: #00915e;
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ *//*     background-color: #00915e;
  */    transform: translateZ(calc(var(--size) * .5));
+ border: 3px solid $green;
+
   }
   .back {
-    background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
-    transform: translateZ(calc(var(--size) * -.5));
+/*     background: url(https://media4.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif);
+ */    transform: translateZ(calc(var(--size) * -.5));
+    border: 3px solid $green;
+
   }
  
   @keyframes text {

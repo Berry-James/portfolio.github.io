@@ -51,6 +51,20 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 observer.observe(sectionOne);
 
+// SOCIAL LINKS
+ 
+const socialObserver = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) {
+        return;
+      }
+        console.log(entry.target);
+        socialAnim();
+        observer.unobserve(entry.target);
+    });
+}, options);
+socialObserver.observe(document.querySelector(".contact"));
+
 /* // 'PROJECTS' TITLE
 const titleObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach(entry => {
@@ -251,7 +265,6 @@ function socialAnim() {
     delay: anime.stagger(50)
   })
 }
-socialAnim()
 
 // BURGER BUTTON
 const burgerBtn = document.querySelector("#burger-button");

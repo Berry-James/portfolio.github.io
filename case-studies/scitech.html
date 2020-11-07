@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -126,13 +127,25 @@ My original designs stuck with the Scitech orange as the highlight colour, howev
         <h2 class="subtitle"><i class="fas fa-terminal"></i>Technical</h2>
         <article class="study-technical">
             
-<p>
+
 <h3>Coding the interactivity</h3> 
-The home-page 'slides' are manipulated via jQuery classList toggles.
+<p>The home-page 'slides' are manipulated via jQuery classList toggles.</p>
 <h3>Using HTML Canvas</h3>
-By far the most difficult aspect of this project was coming up with the logic required to animate a HTML canvas in the way I needed.  I settled on showing a laser (the small red dot) bouncing off a series of randomly generated shapes placed in the canvas.
-Here is the code used to make this work.
-</p>
+<p>By far the most difficult aspect of this project was coming up with the logic required to animate a HTML canvas in the way I needed.  I settled on showing a laser (the small red dot) bouncing off a series of randomly generated shapes placed in the canvas.
+Here is the code used to make this work:</p>
+<div class="code-wrapper">
+  <pre><code>
+  // Boundary Logic
+ 
+  if( x<0 || x>1000) dx=-dx;
+  if( y<0 || y>800) dy=-dy;
+  if( x<xdim3+xdim4 && x>xdim3 && y<xdim1+xdim2 && y>xdim1) dx=-dx, dy=Math.floor((Math.random() * -10) + dx);
+  if( x<ydim1+ydim2 && x>ydim1 && y<ydim3+ydim4 && y>ydim3) dx=-dx, dy=Math.floor((Math.random() * -10) + dx);
+
+  x+=dx;
+  y+=dy;
+  </code></pre>
+</div>
 
         </article>
         <hr>

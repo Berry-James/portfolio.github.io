@@ -148,7 +148,7 @@ const observerNavbar = new IntersectionObserver(function (entries, observer) {
     navbar.classList.add("navbar-active");
   });
 }, options);
-observerNavbar.observe(aboutSection);
+observerNavbar.observe(projectsTitle);
 
 // ABOUT
 let aboutHeader = document.querySelector('.about-header');

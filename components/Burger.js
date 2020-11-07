@@ -37,9 +37,28 @@ const Burger = {
             {name: 'Case Studies', href: './studies.html'},
             {name: 'Contact', href: '../index.html#contact'},
         ]
+        const linksThatWork = [
+            {name: 'About', href: 'https://berry-james.github.io/portfolio.github.io/index.html#skills'},
+            {name: 'Work', href: 'https://berry-james.github.io/portfolio.github.io/index.html#work'},
+            {name: 'Case Studies', href: 'https://berry-james.github.io/portfolio.github.io/case-studies/studies.html'},
+            {name: 'Contact', href: 'https://berry-james.github.io/portfolio.github.io/index.html#contact'},
+        ] 
 
-        // Create an entry with a link for each item in 'links' array
-        if(window.location.pathname.includes('index.html')) {
+        linksThatWork.forEach(link => {
+            let entry = document.createElement("div");
+            entry.className = 'mobile-hamburger-entry';
+            let button = document.createElement("a");
+            button.innerText = link.name;
+            button.setAttribute("href", link.href);
+            entry.appendChild(button);
+            bContainer.appendChild(entry);
+            bContainer.addEventListener("click", () => {
+                Burger.remove();
+            })
+        })
+
+/*         // Create an entry with a link for each item in 'links' array
+        if(window.location.pathname.includes('index')) {
             console.log('INDEX PAGE')
             console.log(window.location.pathname)
             indexLinks.forEach(link => {
@@ -68,7 +87,7 @@ const Burger = {
                     Burger.remove();
                 })
             })
-        }
+        } */
 
 
         // Append links to bContainer div

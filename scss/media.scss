@@ -89,7 +89,6 @@
 @media screen and (max-width: 760px) {
 
     // MOBILE SHOWCASE
-
     .mobile-showcase {
         margin-bottom: 30vh;
         .mobile-showcase-text {
@@ -249,6 +248,10 @@
 
     .study-body, .study-conclusion {
         padding: 0 5vw;
+
+        i {
+            display: none;
+        }
     }
 
     .img-stack {

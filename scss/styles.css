@@ -1423,6 +1423,9 @@ body::-webkit-scrollbar-thumb {
   .study-body, .study-conclusion {
     padding: 0 5vw;
   }
+  .study-body i, .study-conclusion i {
+    display: none;
+  }
 
   .img-stack {
     flex-direction: column;

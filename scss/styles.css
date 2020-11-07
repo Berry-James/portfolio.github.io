@@ -799,7 +799,7 @@ a {
 }
 
 #recorderly-color .study-navbar, #scitech-color .study-navbar, #hpc-color .study-navbar, #travelr-color .study-navbar {
-  box-shadow: 0 0 0.4rem rgba(250, 214, 214, 0.2);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
   height: 50px;
 }
 

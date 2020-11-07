@@ -9,9 +9,29 @@
     justify-content: center;
     position: relative;
 
+    .social-links {
+
+        color: white;
+        font-size: 1.5rem;
+        
+        i {
+            margin: 0 10px;
+        }
+        a {
+            color: white;
+            transition: 0.2s;
+            opacity: 0;
+            filter: none;
+        }
+        a:hover {
+            color: $green;  
+        }
+    }
+
     p {
         margin-bottom: 2%;
         font-family: $body;
+        color: #fff;
     }
 
     h1 {
@@ -22,12 +42,4 @@
         font-weight: normal;
     }
 
-    .social-links {
-        color: white;
-        font-size: 1.5rem;
-        
-        i {
-            margin: 0 10px;
-        }
-    }
 }

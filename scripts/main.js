@@ -199,8 +199,8 @@ particlesJS.load('particles-js-hpc', 'assets/hexagonsH.json', function() {
 particlesJS.load('particles-js-scitech', 'assets/hexagonsS.json', function() {
   console.log('callback - particles.js config loaded');
 })
-// SCITECH
-particlesJS.load('particles-js-travelr', 'assets/hexagonsS.json', function() {
+// TRAVELR
+particlesJS.load('particles-js-travelr', 'assets/hexagonsT.json', function() {
   console.log('callback - particles.js config loaded');
 })
 
@@ -238,6 +238,20 @@ function createLogo() {
      delay: anime.stagger(75, {easing: 'linear'})
  });       
 }
+
+// ANIMATE IN SOCIAL LINKS
+function socialAnim() {
+  const links = document.querySelector(".social-links").querySelectorAll('a');
+  anime({
+    targets: links,
+    keyframes: [
+      { opacity: 0, translateY: '20px', rotate: '90deg' },
+      { opacity: 1, translateY: '0px', rotate: '0deg' }
+    ],
+    delay: anime.stagger(50)
+  })
+}
+socialAnim()
 
 // BURGER BUTTON
 const burgerBtn = document.querySelector("#burger-button");

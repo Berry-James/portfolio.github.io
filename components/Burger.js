@@ -28,7 +28,7 @@ const Burger = {
         let links = [
             {name: 'About', href: '#skills'},
             {name: 'Work', href: '#work'},
-            {name: 'Case Studies', href: '/case-studies/studies.html'},
+            {name: 'Case Studies', href: './case-studies/studies.html'},
             {name: 'Contact', href: '#contact'},
         ]
 

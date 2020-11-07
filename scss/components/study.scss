@@ -287,10 +287,7 @@ a {
     filter: drop-shadow(0 0 0.8rem rgba(0,0,0,0.5));
 }
 
-
-
 .background-overlay {
-    backdrop-filter: blur(2px);
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -302,13 +299,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     border-left: 5vw solid $yellow;
- 
 
 }
 
-#study-wrapper-recorderly:hover {
-
-}
 
 #study-wrapper-hpc {
     background-position: center;
@@ -326,7 +319,6 @@ a {
 }
 
 // NAVBARS 
-
 .navbar-active-study {
     background: $bg;
     transition: 0;

@@ -199,6 +199,10 @@ particlesJS.load('particles-js-hpc', 'assets/hexagonsH.json', function() {
 particlesJS.load('particles-js-scitech', 'assets/hexagonsS.json', function() {
   console.log('callback - particles.js config loaded');
 })
+// SCITECH
+particlesJS.load('particles-js-travelr', 'assets/hexagonsS.json', function() {
+  console.log('callback - particles.js config loaded');
+})
 
 // BUTTON SHOW/HIDE EXTENSIONS
 function showAbout() {

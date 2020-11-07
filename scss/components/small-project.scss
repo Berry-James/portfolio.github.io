@@ -50,15 +50,36 @@
     height: 100vh;
     text-align: center;
     display: flex;
-    align-items: space-between;
+    align-items: center;
     justify-content: center;
-    margin-top: 10vh;
+    margin-bottom: 150px;
+    position: relative;
+
+    .travelr-background {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .project-gradient-overlay {
+        background-color: rgba(0,0,0,0.5);
+        filter: blur(5px);
+    }
+
+    .mobile-showcase-img-wrapper {
+        position: relative;
+        
+        img {
+            width: 30%;
+            filter: drop-shadow(0 0 1rem rgba(0,0,0,1));
+        }
+     }
+
 
     .mobile-showcase-text {
         width: 100%;
-        text-align: center;
-        justify-self: flex-end;
-        align-self: flex-end;
+        text-align: left;
         margin-bottom: 2%;
         margin-top: 5%;
         z-index: 10;
@@ -94,74 +115,51 @@
     }
 
 
-    img {
-        width: 20%;
-        position: absolute;
-        filter: drop-shadow(0 0 1rem rgba(0,0,0,1));
-    }
-
     #img-one {
-        animation: img-one 1s linear;
-        /* Pause the animation */
+        animation: img-one 0.5s linear;
         animation-play-state: paused;
-        /* Bind the animation to scroll */
         animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
         animation-iteration-count: 1;
         animation-fill-mode: both;
     }
     
     #img-two {
-        animation: img-two 1s linear;
-        /* Pause the animation */
+        animation: img-two 0.5s linear;
         animation-play-state: paused;
-        /* Bind the animation to scroll */
         animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
         animation-iteration-count: 1;
         animation-fill-mode: both;
     }
 
     #img-three {
-        animation: img-three 1s linear;
-        /* Pause the animation */
+        animation: img-three 0.5s linear;
         animation-play-state: paused;
-        /* Bind the animation to scroll */
         animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
         animation-iteration-count: 1;
         animation-fill-mode: both;
     }
 
-    #img-four {
-        animation: img-four 1s linear;
-        /* Pause the animation */
-        animation-play-state: paused;
-        /* Bind the animation to scroll */
-        animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
-    }
 }
+
+// SPREAD OUT PHONES ON HOVER
 
 @keyframes img-one {
     to {
-        transform: translateX(-150%) rotate(-7.5deg);
+        transform: translateX(100px) rotate(-7.5deg);
     }
 }
 @keyframes img-two {
     to {
-        transform: translateX(-50%) rotate(-2.5deg) translateY(-5%);
+        transform: rotate(0deg) translateY(-3%);
     }
 }
 @keyframes img-three {
     to {
-        transform: translateX(50%) rotate(2.5deg) translateY(-5%);
+        transform: translateX(-100px) rotate(7.5deg);
     }
 }
 @keyframes img-four {
     to {
-        transform: translateX(150%) rotate(7.5deg);
+        transform: rotate(7.5deg);
     }
 }

@@ -1,6 +1,45 @@
 @import './var.scss';
 
 @media screen and (max-width: 1020px) {
+
+        // CUBE ANIMATION AND SLIDING TEXT ANIMATION
+        .projects-title {
+            animation: none;
+            transform: none;
+        }
+
+        .cube-wrap {
+            position: absolute;
+            --size: 30vmin;
+            z-index: 0;
+          }
+        
+        .cube {
+            animation-play-state: running;
+            animation: cube 10s linear infinite;
+          }
+
+    .mobile-showcase {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        .mobile-showcase-text {
+
+            text-align: center;
+
+            h1 {
+                font-size: 8vw;
+            }
+        }        
+
+        img {
+            width: 50%;
+            margin-top: 7%;
+        }
+
+    }
+
+
     .project-container {
         flex-direction: column;
         justify-content: center;
@@ -29,11 +68,6 @@
         width: 80vw;
     }
 
-    .title-container {
-        h1 {
-            font-size: 3em;
-        }
-    }
     .hexagons {
         width: 90vw;
     }
@@ -53,6 +87,30 @@
 
 
 @media screen and (max-width: 760px) {
+
+    // MOBILE SHOWCASE
+
+    .mobile-showcase {
+        margin-bottom: 30vh;
+        .mobile-showcase-text {
+            h1 {
+                font-size: 20vw;
+            }
+        }
+
+        .mobile-showcase-img-wrapper {
+            #img-one, #img-two {
+                display: none;
+            }
+
+            #img-three {
+                transform: none;
+                animation: none;
+                width: 50vw;
+            }
+        }
+    }
+
     
     
     // LANDING
@@ -89,6 +147,7 @@
             margin: 10% 0;
             padding: 0 5%;
             width: auto;
+            text-align: center;
         }
 
         .about-me-image {
@@ -119,17 +178,7 @@
         z-index: 2;
     }
 
-    // CUBE ANIMATION
-    .cube-wrap {
-        position: absolute;
-        --size: 50vmin;
-        z-index: 0;
-      }
-    
-    .cube {
-        animation-play-state: running;
-        animation: cube 10s linear infinite;
-      }
+
 
       // PROJECTS
         
@@ -182,56 +231,7 @@
     }
 
 
-    .mobile-showcase {
-        margin-top: 0px;
-        align-items: center;
-        
-        .mobile-showcase-text {
-            align-self: flex-start;
-            justify-self: flex-start;
-            width: 100%;
-            height: auto;
-            position: relative;
 
-            h1 {
-                font-size: 20vw;
-            }
-
-            img {
-                position: relative;
-            }
-        }
-        
-        justify-content: center;
-        
-        #img-four, #img-three {
-            display: none;
-        }
-
-        #img-one, #img-two {
-            animation: none;
-        }
-
-        img {
-            width: 50%;
-            margin-top: 7%;
-        }
-
-        #img-one {
-            transform: rotate(-2deg) translateX(-50px);
-            z-index: 2;
-        }
-
-        #img-two {
-            animation: mobileShowcaseMobile 1s linear;
-            animation-play-state: paused;
-            animation-delay: calc(var(--scroll) * -1s);
-            animation-iteration-count: 1;
-            animation-fill-mode: both;
-            transform: rotate(5deg) translateX(50px);
-            z-index: 1;
-        }
-    }
     
     // STUDIES
 

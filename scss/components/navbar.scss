@@ -1,5 +1,35 @@
 @import '../var.scss';
 
+.navbar-active {
+    background-color: rgba(15, 15, 15, 0.8) !important;
+    height: 50px !important;
+}
+
+.navbar {
+    width: 100vw;
+    height: 75px;
+    transition: 0.5s;
+    color: white;
+    background-color: transparent;
+
+    .nav-link {
+        color: white;
+        font-family: $title;
+        margin-right: 15px;
+    }
+
+    .nav-link:hover {
+        font-weight: bold;
+        color: $green;
+        border-bottom: 2px solid $hl;
+        text-decoration: none; 
+    }
+}
+
+.navbar-menu {
+    margin-left: 20px;
+}
+
 
 
 .navbar-start {

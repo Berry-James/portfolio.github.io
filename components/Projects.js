@@ -1,22 +1,21 @@
 import anime from './../node_modules/animejs/lib/anime.es.js';
 
-
 const Projects = {
 
     projectImgAnimRecorderly: () => {
-        let recorderlyWrapper = document.querySelector("#recorderly-content-wrapper");
-        let projectImg = document.querySelector("#recorderly-img-wrapper");
-        let projectTxt = document.querySelector("#recorderly-txt-wrapper");
-        let projectSVG = document.querySelector("#recorderly-screen-svg");
-        let phoneImg = document.querySelectorAll(".project-mockup-mobile");
+        const recorderlyWrapper = document.querySelector("#recorderly-content-wrapper");
+        const projectImg = document.querySelector("#recorderly-img-wrapper");
+        const projectTxt = document.querySelector("#recorderly-txt-wrapper");
+        const projectSVG = document.querySelector("#recorderly-screen-svg");
+        const phoneImg = document.querySelectorAll(".project-mockup-mobile");
 
              anime({
-                begin: function() {
+/*                 begin: function() {
                     let phoneImg = document.createElement("img");
                     phoneImg.setAttribute("src", "./imgs/recorderly-mockup-mobile.png");
                     phoneImg.className = "project-mobile-mockup";
                     projectImg.appendChild(phoneImg);
-                },
+                }, */
                 targets: [recorderlyWrapper, projectTxt, phoneImg],
                 keyframes: [
                     {  opacity: 0, translateX: '-100vw' },
@@ -55,10 +54,10 @@ const Projects = {
         },
 
     projectImgAnimHPC: () => {
-        let wrapper = document.querySelector("#HPC-content-wrapper");
-        let projectImg = document.querySelector("#HPC-img-wrapper");
-        let projectTxt = document.querySelector("#HPC-txt-wrapper");
-        let projectSVG = document.querySelector("#HPC-screen-svg");
+        const wrapper = document.querySelector("#HPC-content-wrapper");
+        const projectImg = document.querySelector("#HPC-img-wrapper");
+        const projectTxt = document.querySelector("#HPC-txt-wrapper");
+        const projectSVG = document.querySelector("#HPC-screen-svg");
         
 /*                  anime({
                 targets: [wrapper, projectTxt],
@@ -98,10 +97,10 @@ const Projects = {
 
 
     projectImgAnimScitech: () => {
-        let wrapper = document.querySelector("#scitech-content-wrapper");
-        let projectImg = document.querySelector("#scitech-img-wrapper");
-        let projectTxt = document.querySelector("#scitech-txt-wrapper");
-        let projectSVG = document.querySelector("#scitech-screen-svg");
+        const wrapper = document.querySelector("#scitech-content-wrapper");
+        const projectImg = document.querySelector("#scitech-img-wrapper");
+        const projectTxt = document.querySelector("#scitech-txt-wrapper");
+        const projectSVG = document.querySelector("#scitech-screen-svg");
           
             anime({
             targets: [wrapper, projectTxt],
@@ -116,7 +115,7 @@ const Projects = {
         },
     
     projectImgAnimTravelr: () => {
-        let travelrImgs = document.querySelectorAll(".travelr-img");
+        const travelrImgs = document.querySelectorAll(".travelr-img");
         anime({
             targets: travelrImgs,
             keyframes: [

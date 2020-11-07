@@ -88,13 +88,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-top: 100px;
 
     h1 {
         font-size: 8rem;
         color: black;
         z-index: 2;
         position: relative;
-        margin: 2% auto;
         justify-self: center;
         font-family: 'Staatliches', cursive;
         letter-spacing: 8px;
@@ -108,6 +109,7 @@
         height: 15vh;
 
         z-index: 1;
+        display: none;
         
     }
 }
@@ -170,7 +172,6 @@ hr {
 }
 
 .navbar-active-study {
-    background-color: #242424 !important;
     height: 50px !important;
     color: white !important;
 }
@@ -293,10 +294,27 @@ a {
 
 #study-wrapper-scitech {
     border-left: 5vw solid #432ab0;
-
 }
 
 #study-wrapper-travelr {
     border-left: 5vw solid #525252;
+}
+
+// NAVBARS 
+.recorderly-navbar {
+    background-color: $yellow;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.2);
+}
+
+.scitech-navbar {
 
 }
+
+.hpc-navbar {
+
+}
+
+.travelr-navbar {
+    
+}
+

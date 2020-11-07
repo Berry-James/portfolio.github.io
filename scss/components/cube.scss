@@ -17,7 +17,7 @@
     perspective: 100vmin;
     animation: glowAnim 4s ease-in-out infinite alternate;
     filter: drop-shadow(0 0 1rem #007d50);
-    z-index: 2;
+    z-index: 1;
   }
   .cube {
     transform-style: preserve-3d;

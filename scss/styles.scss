@@ -1,3 +1,4 @@
+@use './components/navbar.scss';
 @use './components/skills.scss';
 @use './components/work.scss';
 @use './components/landing.scss';
@@ -5,7 +6,6 @@
 @use './components/study.scss';
 @use './components/svg.scss';
 @use './components/small-project.scss';
-@use './components/navbar.scss';
 @use './components/cube.scss';
 @use './components/scrollbar.scss';
 @use './components/social.scss';
@@ -13,14 +13,9 @@
 @use './components/about.scss';
 @use './media.scss';
 
-
 @import './var.scss';
 
-$bg: #070707;
-$hl: #007D50;
-$title: 'Comfortaa', cursive;
-$code: 'Ubuntu Mono', monospace;
-$navbar-height: 5rem;   
+
 
 // SWUP
 .transition-fade {
@@ -58,35 +53,7 @@ b {
     color: $hl;
 }
 
-.navbar-active {
-    background-color: rgba(15, 15, 15, 0.8) !important;
-    height: 50px !important;
-}
 
-.navbar {
-    width: 100vw;
-    height: 75px;
-    transition: 0.5s;
-    color: white;
-    background-color: transparent;
-
-    .nav-link {
-        color: white;
-        font-family: $title;
-        margin-right: 15px;
-    }
-
-    .nav-link:hover {
-        font-weight: bold;
-        color: $green;
-        border-bottom: 2px solid $hl;
-        text-decoration: none; 
-    }
-}
-
-.navbar-menu {
-    margin-left: 20px;
-}
 
 .script {
     font-family: $code;

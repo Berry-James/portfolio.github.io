@@ -169,7 +169,7 @@
 .project-container {
     background-color: #1f1f1f;
 /*     padding: 25vh 0px 25vh;
- */    box-shadow: 0px 0px 5px #1f1f1f;
+ */    
     height: 100vh;
     z-index: 2;
     position: relative;
@@ -224,7 +224,7 @@
 /*         opacity: 0;
  */    }
     width: 100vw;
-    height: 800px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -234,6 +234,8 @@
         color: white;
         font-size: 13rem;
         z-index: 1;
+        position: relative;
+
 
     }
 }

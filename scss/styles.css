@@ -1460,6 +1460,10 @@ body::-webkit-scrollbar-thumb {
   /*     .study-img-wrapper img:last-of-type {
           display: none;
       } */
+  .study-img-wrapper .phone-img:last-of-type {
+    display: none;
+  }
+
   .study-subtext-container {
     padding: 0 5vw;
     text-align: center;

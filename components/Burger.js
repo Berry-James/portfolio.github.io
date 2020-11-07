@@ -39,9 +39,10 @@ const Burger = {
         ]
 
         // Create an entry with a link for each item in 'links' array
-        if(window.location.pathname != '/index.html') {
-            console.log('NOT INDEX PAGE')
-            elseLinks.forEach(link => {
+        if(window.location.pathname.includes('index.html')) {
+            console.log('INDEX PAGE')
+            console.log(window.location.pathname)
+            indexLinks.forEach(link => {
                 let entry = document.createElement("div");
                 entry.className = 'mobile-hamburger-entry';
                 let button = document.createElement("a");
@@ -54,9 +55,8 @@ const Burger = {
                 })
             })
         } else {
-            console.log('INDEX PAGE')
-            console.log(window.location.pathname)
-            indexLinks.forEach(link => {
+            console.log('NOT INDEX PAGE')
+            elseLinks.forEach(link => {
                 let entry = document.createElement("div");
                 entry.className = 'mobile-hamburger-entry';
                 let button = document.createElement("a");

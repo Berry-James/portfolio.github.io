@@ -3,15 +3,25 @@
     * CODE BLOCKS IN STUDIES !!!!
     * ABOUT SECTION !!!! (modal perhaps)
 
-<<STYL>>
+<<STUDY>>
+    * context mockups for {
+        Scitech(x2)
+        Travelr(x1 or x2, desktop)
+    }
+    * Code for 
+        Recorderly server
+        HPC server
 
-    * burger/close icons (maybe something custom?)
+    * finish writing
+        Recorderly - conclusion
+        Scitech - conclusion
+        Travelr- conclusion, 'to come'
+<<STYL>>
     * some sort of backdrop behind about/skills sections
     * "" for contact section
 
 <<BUGS>>
-    * case studies link does not work in all locations
-        [TEMP]hardcoded hrefs for burger menu - only works on deployment url however
+
 
 
 <<Left for submission>>

@@ -145,7 +145,10 @@ The early design drafts for <strong>Recorderly</strong>  took inspiration from p
 <h3>Storing the user data</h3>
 <p>The user collection is a relatively simple undertaking.  Utilising Mongo's own Atlas service for hosting, each user's collection and wishlist is stored as an array of integers (Discogs IDs for each release).  My backend API was built on Node.js and Express, with Mongoose used to keep database connection simple.  API endpoints were set up for typical CRUD operations and user authentication was done via JWT.</p>
 <h3>Retrieving the user data</h3>
-<p>Retrieving the user's collection and wishlist was another challenge in itself.  Fetching the array's from my own database is easy  The Discogs API provides no method for getting multiple release IDs in one operation (understandable, as there is likely no relationship between the IDs being looked up).  As a workaround, I needed to loop through the user's collection array one by and create objects for each, store these objects in an array, render these objects in the DOM and finally animate each object into view using anime.js.</p>
+<p>Retrieving the user's collection and wishlist was another challenge in itself.  Fetching the array's from my own database is easy  The Discogs API provides no method for getting multiple release IDs in one operation (understandable, as there is likely no relationship between the IDs being looked up).  For ny first  workaround, I looped through the user's collection array one by and create objects for each, store these objects in an array, render these objects in the DOM and finally animate each object into view using anime.js.
+Whilst this worked fine for a small collection, larger collections wouldn't not complete as too many API calls were being sent to the Discogs API, timing the app out.</p>
+<p>The settled-on solution was to store the full collection data in my own database for each release as they are added.  Whilst I would have preferred to store only item ID's in each user's collection field, it was simply not possible due to the limitations of the Discogs API.
+</p>
 
         </article>
         <hr>

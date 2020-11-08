@@ -96,7 +96,7 @@ const Burger = {
 
         // change burger button to cross button
         burgerBtn.innerHTML = null;
-        burgerBtn.innerHTML = '&times;';
+        burgerBtn.innerHTML = '<i class="fas fa-times"></i>';
 
         // Animate burger div entrance
         anime({

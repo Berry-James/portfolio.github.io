@@ -26,6 +26,12 @@
   margin-left: 20px;
 }
 
+.navbar-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-start a:hover {
   color: inherit;
   border-bottom: 10px solid #007d50;
@@ -1400,7 +1406,8 @@ body::-webkit-scrollbar-thumb {
   .mobile-showcase .mobile-showcase-img-wrapper #img-three {
     transform: none;
     animation: none;
-    width: 50vw;
+    height: 50vh;
+    width: auto;
   }
 
   .landingImg {

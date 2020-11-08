@@ -9,6 +9,21 @@ window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
+
+// TEST LETTER INTRO
+const header = document.querySelector(".landing-header").innerText.split('');
+header.forEach(letter => {
+  anime({
+    targets: letter,
+    keyframes: [
+      { display: 'none' },
+      { display: 'block' }
+    ],
+    delay: anime.stagger(200)
+  })
+})
+
+
 // RANDOM
 Random.gen();
 

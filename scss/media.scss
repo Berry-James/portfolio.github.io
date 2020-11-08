@@ -99,13 +99,14 @@
 
         .mobile-showcase-img-wrapper {
             #img-one, #img-two {
-                display: none;
+                display: none;      
             }
 
             #img-three {
                 transform: none;
                 animation: none;
-                width: 50vw;
+                height: 50vh;
+                width: auto;
             }
         }
     }

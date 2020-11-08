@@ -21,7 +21,9 @@
     * "" for contact section
 
 <<BUGS>>
-
+ - burger button sinks behind/wrong colour on study pages
+- not using fa bars on study navbar
+- get pro photo for profile pic
 
 
 <<Left for submission>>

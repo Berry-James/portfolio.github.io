@@ -146,7 +146,7 @@ const Burger = {
             }
         })
 /*         burger.remove();
- */        burgerBtn.innerHTML = '☰';
+ */        burgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
     } 
 }
 

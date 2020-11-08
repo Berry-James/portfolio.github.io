@@ -39,6 +39,11 @@
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
+    font-size: 1.3rem;
+
+    ul {
+        list-style-type: square;
+    }
 
     
     p {
@@ -205,12 +210,14 @@ hr {
     width: 40vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 
     img {
         height: 4vh;
         width: auto;
+        margin: 0 10px;
 
     }
 }
@@ -360,7 +367,7 @@ a {
         background-color: $yellow;
     }
 
-    i {
+    i, strong {
         color: $yellow;
     }
 }
@@ -369,7 +376,7 @@ a {
     .study-navbar {
         background-color: $purple;
     }
-    i {
+    i, strong {
         color: $purple;
     }
 }
@@ -378,17 +385,17 @@ a {
     .study-navbar {
         background-color: $red;
     }
-    i {
+    i, strong {
         color: $red;
     }
 }
 
 #travelr-color {
     .study-navbar {
-        background-color: $hl;
+        background-color: $travelr;
     }
-    i {
-        color: $yellow;
+    i, strong {
+        color: $travelr;
     }
 }
 

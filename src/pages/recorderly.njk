@@ -50,16 +50,16 @@ After building my first single page application (Honda Parts Center), I was over
 {% endblock %}
 
 {% block overview %}
-Recorderly is a site where users can organise and manage their physical music collection.  The idea is simple: Users search for releases they own, add them to their collection in the correct format (usually Vinyl, Casette or CD) and share with their friends via QR code or URL.  Users can also add items to their wishlist whilst browsing.
+<strong>Recorderly</strong> is a site where users can organise and manage their physical music collection.  The idea is simple: Users search for releases they own, add them to their collection in the correct format (usually Vinyl, Casette or CD) and share with their friends via QR code or URL.  Users can also add items to their wishlist whilst browsing.
 {% endblock %}
 
 {% block design %}
-The early design drafts for Recorderly  took inspiration from popular music streaming and database sites such as Discogs and Spotify.  Discogs has a powerful, user updated database with almost any release you could ask for.  Depsite this, its user interface design is somewhat outdated, visually unappealing and tricky to navigate at times.
+The early design drafts for <strong>Recorderly</strong>  took inspiration from popular music streaming and database sites such as Discogs and Spotify.  Discogs has a powerful, user updated database with almost any release you could ask for.  Depsite this, its user interface design is somewhat outdated, visually unappealing and tricky to navigate at times.
 {% endblock %}
 
 {% block technical %}
 <h3>The API</h3>
-<p>I would utilise the Discogs API in the building of my app as it is fast, reliable and contains all the data I could ask for.  The highly customisable search endpoint would come in useful for the majority of my data acquisition.  I chose to filter the results to 'master release' only, as Discogs stores data for every iteration of a release and would display many duplicates of most releases as a result.  This also automatically filtered out Artists, as *Recorderly* would only search for actual releases.</p>
+<p>I would utilise the Discogs API in the building of my app as it is fast, reliable and contains all the data I could ask for.  The highly customisable search endpoint would come in useful for the majority of my data acquisition.  I chose to filter the results to 'master release' only, as Discogs stores data for every iteration of a release and would display many duplicates of most releases as a result.  This also automatically filtered out Artists, as <strong>Recorderly</strong> would only search for actual releases.</p>
 <h3>Storing the user data</h3>
 <p>The user collection is a relatively simple undertaking.  Utilising Mongo's own Atlas service for hosting, each user's collection and wishlist is stored as an array of integers (Discogs IDs for each release).  My backend API was built on Node.js and Express, with Mongoose used to keep database connection simple.  API endpoints were set up for typical CRUD operations and user authentication was done via JWT.</p>
 <h3>Retrieving the user data</h3>

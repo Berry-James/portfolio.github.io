@@ -566,6 +566,10 @@
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
+  font-size: 1.3rem;
+}
+.study-main ul {
+  list-style-type: square;
 }
 .study-main p {
   font-size: 1.3rem;
@@ -704,12 +708,14 @@ hr {
   width: 40vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .study-tools-wrapper img {
   height: 4vh;
   width: auto;
+  margin: 0 10px;
 }
 
 .navbar {
@@ -840,29 +846,29 @@ a {
 #recorderly-color .study-navbar {
   background-color: #f9b920;
 }
-#recorderly-color i {
+#recorderly-color i, #recorderly-color strong {
   color: #f9b920;
 }
 
 #scitech-color .study-navbar {
   background-color: #432ab0;
 }
-#scitech-color i {
+#scitech-color i, #scitech-color strong {
   color: #432ab0;
 }
 
 #hpc-color .study-navbar {
   background-color: #ff4045;
 }
-#hpc-color i {
+#hpc-color i, #hpc-color strong {
   color: #ff4045;
 }
 
 #travelr-color .study-navbar {
-  background-color: #007D50;
+  background-color: #eb5160;
 }
-#travelr-color i {
-  color: #f9b920;
+#travelr-color i, #travelr-color strong {
+  color: #eb5160;
 }
 
 .hexagon-svg .a {
@@ -988,6 +994,8 @@ a {
   margin-bottom: 2%;
   margin-top: 5%;
   z-index: 10;
+  opacity: 0;
+  transform: scale(0);
 }
 .mobile-showcase .mobile-showcase-text .case-study-btn {
   width: 300px;
@@ -1245,7 +1253,8 @@ body::-webkit-scrollbar-thumb {
 
 .study-palette-container {
   display: flex;
-  width: 50vw;
+  justify-content: center;
+  display: flex;
 }
 .study-palette-container div {
   display: flex;
@@ -1261,6 +1270,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 150px;
   filter: drop-shadow(0 0 0.8rem rgba(230, 230, 230, 0.6));
+  filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
 }
 .study-palette-container .recorderly-1 {
   fill: #f8b920;
@@ -1291,6 +1301,15 @@ body::-webkit-scrollbar-thumb {
 }
 .study-palette-container .scitech-3 {
   fill: #f1f2f3;
+}
+.study-palette-container .travelr-1 {
+  fill: #eb5160;
+}
+.study-palette-container .travelr-2 {
+  fill: #0b1114;
+}
+.study-palette-container .travelr-3 {
+  fill: #dfe0e2;
 }
 
 @media screen and (max-width: 1020px) {
@@ -1481,6 +1500,10 @@ body::-webkit-scrollbar-thumb {
       transform: translateX(80px) rotate(5deg);
     }
   }
+  .study-palette-container svg {
+    width: 100px;
+  }
+
   .study-wrapper {
     display: flex;
     flex-direction: column;
@@ -1593,6 +1616,14 @@ ul {
 
 b {
   color: #007D50;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  background: none;
+  color: #007d50;
+  font-weight: bold;
+  padding: 0;
 }
 
 .script {

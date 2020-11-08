@@ -47,7 +47,7 @@ imgs.forEach(img => {
                 targets: img,
                 keyframes: [
                     { opacity: 0, translateX: '10px' },
-                    { opacity: 1, translateY: '0px' }
+                    { opacity: 1, translateX: '0px' }
                 ],
                 duration: 800,
                 easing: 'easeInOutQuad',

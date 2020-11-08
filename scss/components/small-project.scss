@@ -84,6 +84,8 @@
         margin-bottom: 2%;
         margin-top: 5%;
         z-index: 10;
+        opacity: 0;
+        transform: scale(0);
 
         .case-study-btn {
             width: 300px;

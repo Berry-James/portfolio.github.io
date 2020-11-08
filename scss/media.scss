@@ -234,6 +234,12 @@
     
     // STUDIES
 
+    .study-palette-container {
+        svg {
+            width: 100px;
+        }
+    }
+
     .study-wrapper {
         display: flex;
         flex-direction: column;

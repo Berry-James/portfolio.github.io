@@ -1,0 +1,107 @@
+{% extends "../templates/study.njk" %}
+
+{% block page %}travelr-color{% endblock %}
+
+{% block palette %}
+  <div>
+    <svg class="travelr-1" width="285.526" height="274.545" viewBox="0 0 285.526 274.545"><defs></defs><path class="a" d="M165,0l55,95-55,95H55L0,95,55,0Z" transform="translate(95) rotate(30)"/></svg>            
+    <label>#eb5160</label>
+  </div>
+  <div>
+    <svg class="travelr-2" width="285.526" height="274.545" viewBox="0 0 285.526 274.545"><defs></defs><path class="a" d="M165,0l55,95-55,95H55L0,95,55,0Z" transform="translate(95) rotate(30)"/></svg>            
+    <label>#0b1114</label>
+  </div>
+  <div>
+    <svg class="travelr-3" width="285.526" height="274.545" viewBox="0 0 285.526 274.545"><defs></defs><path class="a" d="M165,0l55,95-55,95H55L0,95,55,0Z" transform="translate(95) rotate(30)"/></svg>            
+    <label>#dfe0e2</label>
+  </div>
+{% endblock %}
+
+
+{% block hexagonR %}
+<svg class="study-hexagons-recorderly-right" width="100%" height="100%" viewBox="0 0 285 275"><path d="M165,0l55,95-55,95H55L0,95,55,0Z" transform="translate(95) rotate(30)"/></svg>
+{% endblock %}
+{% block hexagonL %}
+<svg class="study-hexagons-recorderly-left" width="100%" height="100%" viewBox="0 0 285 275"><path d="M165,0l55,95-55,95H55L0,95,55,0Z" transform="translate(95) rotate(30)"/></svg>
+{% endblock %}
+
+{% block head %}
+<title>Trave.lr - a case study</title>
+{% endblock %}
+
+{% block tools %}
+<img src="https://bulma.io/images/bulma-logo.png">
+<img src="../imgs/icons/sass.svg">
+<img src="../imgs/icons/express.png">
+<img src="../imgs/icons/mongo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/1200px-Node.js_logo_2015.svg.png">
+{% endblock %}
+
+{% block title %}
+Trave.lr
+{% endblock %}
+
+{% block subtext %}
+A travel-centric information network updated by its users.
+{% endblock %}
+
+{% block intro %}
+Learning a JavaScript framework had been on my 'TODO' list for quite some time.  Some days, I would sit down with a 12hr Youtube video walking through a full React build from beginning to end, but as it is for many of us - life gets in the way.  
+Part of the reason for this is never having a solid idea for a project - but after flicking through some photos from a recent trip to Japan, an idea dawned.  A photo-based social platform, with gallery's grouped based on location and each image carrying an accompanying story.
+Many image sharing sites put the full focus on the image itself, however the story that accompany's can be just as important.
+{% endblock %}
+
+{% block overview %}
+
+Trave.lr is a fully responsive social network web app which is being built in the <code>React</code> framework.
+Trave.lr combines imagery and story-telling and provides a platform for users to share their favourite travel-releated photography along with an accompanying short story, explanation or thought.
+
+{% endblock %}
+
+{% block design %}
+When designing <strong>Trave.lr</strong> I first looked into the designs of many successful travel sites.  These often featured image-driven hero banners and simple iconography for navigation.
+I also looked at the design of image sharing sites such as Instagram and Flickr, as <strong>Trave.lr</strong> will be largely image driven.
+{% endblock %}
+
+{% block technical %}
+<h3>React Router</h3>
+<p>The React Router would be used for page navigation, as it is easy to understand and performs very well.</p>
+<h3>Integrating a database</h3>
+<p>I plan on utilising Google Firebase as a database service for this app.  This will provide a secure and fully-functional noSQL database for user stories and images, whilst negating the need for me to write a ground-up in Node.js.
+Plus, Firebase is a largely mobile-centric service - much like my design. </p>
+<h3>To come</h3>
+<p></p>
+{% endblock %}
+
+{% block conclusion %}
+<h3>A work in progress</h3>
+A splash page for the site is currently live, showcasing several of the planned designs.  CRUD functionality is currently being worked on, as I want <strong>Trave.lr</strong> to be the best it can be.
+<h3>Future Plans</h3>
+<ul>
+  <li>Google Firebase integration</li>
+  <li>React Native Build</li>
+</ul>
+{% endblock %}
+
+{# IMAGES #}
+{% block imgOne %}
+"../imgs/studies/travelr/main.png"
+{% endblock %}
+
+{% block headImg %}
+{# "../../imgs/studies/recorderly/banner.svg" #}
+<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 475.25" preserveAspectRatio="none">
+  <path id="Path_1" data-name="Path 1" d="M0,0V377.368s410.526,197.368,729.474,31.579,442.105,116.842,631.579,50.526,420-151.579,495.79-82.105,64.737,58.421,64.737,58.421V0Z" fill="#f8b920"/>
+</svg>
+{% endblock %}
+
+{% block designImg %}
+<img src="../imgs/studies/recorderly/design.JPG">
+<img src="../imgs/studies/recorderly/mockup-1.png">
+{% endblock %}
+
+{% block afterIntroImg %}
+<img src="../imgs/mobile-travelr.png" class="phone-img">
+<img src="../imgs/mobile-travelr-2.png" class="phone-img">
+<img src="../imgs/mobile-travelr-3.png" class="phone-img">
+{% endblock %}

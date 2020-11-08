@@ -116,6 +116,7 @@ const Projects = {
     
     projectImgAnimTravelr: () => {
         const travelrImgs = document.querySelectorAll(".travelr-img");
+        const projectTxt = document.querySelector("#travelr-txt-wrapper");
         anime({
             targets: travelrImgs,
             keyframes: [
@@ -125,6 +126,16 @@ const Projects = {
             
             easing: 'spring(1, 80, 10, 0)',
             delay: anime.stagger(250),
+            duration: 1500,
+        })
+        anime({
+            targets: projectTxt,
+            keyframes: [
+                { opacity: 0, scale: 0.2 },
+                { opacity: 1, scale: 1 }
+            ],
+            
+            easing: 'spring(1, 80, 10, 0)',
             duration: 1500,
         })
     }

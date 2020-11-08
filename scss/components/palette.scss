@@ -1,6 +1,8 @@
 @import '../var.scss';
 
 .study-palette-container {
+    display: flex;
+    justify-content: center;
 
     div {
         display: flex;
@@ -15,13 +17,12 @@
         top: -60px;
     }
     
-
     svg {
         position: relative;
         width: 150px;
         filter: drop-shadow(0 0 0.8rem rgba(230, 230, 230, 0.6));
+        filter: drop-shadow(0 0 0.8rem rgba(0,0,0,0.5));
     }
-    width: 50vw;
     .recorderly-1 {
         fill: #f8b920;
     }
@@ -53,5 +54,15 @@
     }
     .scitech-3 {
         fill: #f1f2f3;
+    }
+    
+    .travelr-1 {
+        fill: #eb5160;
+    }
+    .travelr-2 {
+        fill: #0b1114;
+    }
+    .travelr-3 {
+        fill: #dfe0e2;
     }
 }

@@ -8,11 +8,8 @@ const Study = {
 
     observer: () => {
         // intersection observers
-        let imgOne = document.querySelector(".study-img-wrapper");
         let imgs = document.querySelectorAll(".study-img-wrapper");
         let subtitles = document.querySelectorAll(".subtitle");
-        let navbar = document.querySelector("#navbar");
-        let tools = document.querySelector(".study-tools-wrapper");
 
         const options = {
             root: null,
@@ -52,7 +49,7 @@ const Study = {
                         targets: img,
                         keyframes: [
                             { opacity: 0, translateX: '10px' },
-                            { opacity: 1, translateY: '0px' }
+                            { opacity: 1, translateX: '0px' }
                         ],
                         duration: 800,
                         easing: 'easeInOutQuad',
@@ -108,11 +105,6 @@ const Study = {
             })
         });
     },
-
-    navcolor: () => {
-        
-    }
-
 }
 
 export { Study }

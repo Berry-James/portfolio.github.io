@@ -36,7 +36,7 @@
         <div class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item nav-link" href="../index.html#skills">Skills</a>
-                <a class="navbar-item nav-link" href="../index.html#work">Work</a>
+                <a class="navbar-item nav-link" href="../index.html#work">Projects</a>
                 <a class="navbar-item nav-link" href="../case-studies/studies.html">Case Studies</a>
                 <a class="navbar-item nav-link" href="../index.html#contact">Contact</a>
             </div>
@@ -96,6 +96,12 @@ A light-weight and simpler tool aimed at helping the casual music collector keep
 After building my first single page application (Honda Parts Center), I was overwhelmed by overall complexity of the project.  Whilst the site I had built was functional, truth be told - I didn't really understand how all of these different components worked together.  The aim when developing Recorderly was to delve back in to the world of SPAs and build something bigger and better.
 </p>
         </article>
+        <article class="study-overview">
+            <h2 class="subtitle"><i class="fas fa-search"></i></i>Overview</h2>
+            <p>
+<strong>Recorderly</strong> is a site where users can organise and manage their physical music collection.  The idea is simple: Users search for releases they own, add them to their collection in the correct format (usually Vinyl, Casette or CD) and share with their friends via QR code or URL.  Users can also add items to their wishlist whilst browsing.
+</p>
+        </article>
         <div class="study-img-wrapper">
             
 <img src="../imgs/studies/recorderly/phone-1.png" class="phone-img">
@@ -106,7 +112,7 @@ After building my first single page application (Honda Parts Center), I was over
         <h2 class="subtitle design-title"><i class="fas fa-paint-brush"></i>Design</h2>
         <article class="study-design">
             <p>
-The early design drafts for Recorderly  took inspiration from popular music streaming and database sites such as Discogs and Spotify.  Discogs has a powerful, user updated database with almost any release you could ask for.  Depsite this, its user interface design is somewhat outdated, visually unappealing and tricky to navigate at times.
+The early design drafts for <strong>Recorderly</strong>  took inspiration from popular music streaming and database sites such as Discogs and Spotify.  Discogs has a powerful, user updated database with almost any release you could ask for.  Depsite this, its user interface design is somewhat outdated, visually unappealing and tricky to navigate at times.
 </p>
             <div class="study-palette-container">
                 
@@ -135,7 +141,7 @@ The early design drafts for Recorderly  took inspiration from popular music stre
         <article class="study-technical">
             
 <h3>The API</h3>
-<p>I would utilise the Discogs API in the building of my app as it is fast, reliable and contains all the data I could ask for.  The highly customisable search endpoint would come in useful for the majority of my data acquisition.  I chose to filter the results to 'master release' only, as Discogs stores data for every iteration of a release and would display many duplicates of most releases as a result.  This also automatically filtered out Artists, as *Recorderly* would only search for actual releases.</p>
+<p>I would utilise the Discogs API in the building of my app as it is fast, reliable and contains all the data I could ask for.  The highly customisable search endpoint would come in useful for the majority of my data acquisition.  I chose to filter the results to 'master release' only, as Discogs stores data for every iteration of a release and would display many duplicates of most releases as a result.  This also automatically filtered out Artists, as <strong>Recorderly</strong> would only search for actual releases.</p>
 <h3>Storing the user data</h3>
 <p>The user collection is a relatively simple undertaking.  Utilising Mongo's own Atlas service for hosting, each user's collection and wishlist is stored as an array of integers (Discogs IDs for each release).  My backend API was built on Node.js and Express, with Mongoose used to keep database connection simple.  API endpoints were set up for typical CRUD operations and user authentication was done via JWT.</p>
 <h3>Retrieving the user data</h3>

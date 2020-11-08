@@ -54,6 +54,14 @@ b {
     color: $hl;
 }
 
+code {
+    font-family: 'Fira Code', monospace;
+    background: none;
+    color: $green;
+    font-weight: bold;
+    padding: 0;
+}
+
 
 
 .script {

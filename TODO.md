@@ -11,6 +11,7 @@
 
 <<BUGS>>
     * case studies link does not work in all locations
+        [TEMP]hardcoded hrefs for burger menu - only works on deployment url however
 
 
 <<Left for submission>>

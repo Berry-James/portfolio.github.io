@@ -16,13 +16,12 @@
         Recorderly - conclusion
         Scitech - conclusion
         Travelr- conclusion, 'to come'
-<<STYL>>
+
+<<STYLEL>>
     * some sort of backdrop behind about/skills sections
     * "" for contact section
 
 <<BUGS>>
- - burger button sinks behind/wrong colour on study pages
-- not using fa bars on study navbar
 - get pro photo for profile pic
 
 
@@ -37,4 +36,4 @@
         instagram
     
     * CV
-    * get business cards printed
+    * get business cards done

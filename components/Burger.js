@@ -34,7 +34,7 @@ const Burger = {
         const elseLinks = [
             {name: 'About', href: '../index.html#skills'},
             {name: 'Work', href: '../index.html#work'},
-            {name: 'Case Studies', href: './studies.html'},
+            {name: 'Case Studies', href: '../../case-studies/studies.html'},
             {name: 'Contact', href: '../index.html#contact'},
         ]
         const linksThatWork = [

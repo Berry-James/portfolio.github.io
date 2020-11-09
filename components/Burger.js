@@ -44,7 +44,7 @@ const Burger = {
             {name: 'Contact', href: 'https://berry-james.github.io/portfolio.github.io/index.html#contact'},
         ] 
 
-        linksThatWork.forEach(link => {
+        elseLinks.forEach(link => {
             let entry = document.createElement("div");
             entry.className = 'mobile-hamburger-entry';
             let button = document.createElement("a");

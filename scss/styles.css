@@ -539,7 +539,7 @@
 }
 
 .code-wrapper {
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #1f1f1f;
   border-radius: 10px;
   box-shadow: 0 0 1rem rgba(220, 220, 220, 0.8);
@@ -566,6 +566,33 @@
   width: 50px;
   left: 0;
   fill: #f9b920;
+}
+
+.study-hexagons-travelr-right, .study-hexagons-travelr-left {
+  display: inline;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 0;
+  fill: #eb5160;
+}
+
+.study-hexagons-hpc-right, .study-hexagons-hpc-left {
+  display: inline;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 0;
+  fill: #ff4045;
+}
+
+.study-hexagons-scitech-right, .study-hexagons-scitech-left {
+  display: inline;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 0;
+  fill: #432ab0;
 }
 
 .study-main {
@@ -702,6 +729,10 @@
 
 .study-conclusion {
   padding: 0 20vw;
+}
+.study-conclusion i {
+  transform: translateX(-60px) translateY(5px);
+  position: absolute;
 }
 
 hr {

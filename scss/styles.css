@@ -1035,6 +1035,9 @@ a {
   opacity: 0;
   transform: scale(0);
 }
+.mobile-showcase .mobile-showcase-text h2 {
+  font-size: 2rem;
+}
 .mobile-showcase .mobile-showcase-text .mobile-btn-wrapper {
   display: flex;
   flex-direction: column;

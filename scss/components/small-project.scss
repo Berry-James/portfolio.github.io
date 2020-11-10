@@ -87,6 +87,10 @@
         opacity: 0;
         transform: scale(0);
 
+        h2 {
+            font-size: 2rem;
+        }
+
         .mobile-btn-wrapper {
             display: flex;
             flex-direction: column;

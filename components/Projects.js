@@ -117,17 +117,42 @@ const Projects = {
     projectImgAnimTravelr: () => {
         const travelrImgs = document.querySelectorAll(".travelr-img");
         const projectTxt = document.querySelector("#travelr-txt-wrapper");
+        // each img
+        const imgOne = document.querySelector("#img-one");
+        const imgTwo = document.querySelector("#img-two");
+        const imgThree = document.querySelector("#img-three");
+
         anime({
-            targets: travelrImgs,
+            targets: imgOne,
             keyframes: [
-                { opacity: 0, scale: 0.2 },
-                { opacity: 1, scale: 1 }
+                { opacity: 0, translateX: 0, rotate: 0 },
+                { opacity: 1, translateX: '100px', rotate: '-7.5deg' }
             ],
-            
+            easing: 'spring(1, 80, 10, 0)',
+            duration: 1500,
+        });
+        
+        anime({
+            targets: imgTwo,
+            keyframes: [
+                { opacity: 0, translateY: 0 },
+                { opacity: 1, translateY: '-3%' }
+            ],
+            easing: 'spring(1, 80, 10, 0)',
+            duration: 1500,
+        });
+
+        anime({
+            targets: imgThree,
+            keyframes: [
+                { opacity: 0, translateX: 0, rotate: 0 },
+                { opacity: 1, translateX: '-100px', rotate: '7.5deg' }
+            ],
             easing: 'spring(1, 80, 10, 0)',
             delay: anime.stagger(250),
             duration: 1500,
-        })
+        });
+
         anime({
             targets: projectTxt,
             keyframes: [
@@ -137,7 +162,7 @@ const Projects = {
             
             easing: 'spring(1, 80, 10, 0)',
             duration: 1500,
-        })
+        });
     }
         
 }

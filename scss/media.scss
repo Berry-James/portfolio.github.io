@@ -83,6 +83,12 @@
     .small-projects-container {
         flex-direction: column;
     }
+
+    
+    .mobile-btn-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -103,7 +109,7 @@
             }
 
             #img-three {
-                transform: none;
+                transform: none !important;
                 animation: none;
                 height: 50vh;
                 width: auto;
@@ -229,7 +235,6 @@
             transform: translateX(80px) rotate(5deg);
         }
     }
-
 
 
     

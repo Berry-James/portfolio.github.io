@@ -90,6 +90,7 @@
         .mobile-btn-wrapper {
             display: flex;
             flex-direction: column;
+
         }
 
         .case-study-btn {
@@ -124,27 +125,30 @@
 
 
     #img-one {
-        animation: img-one 0.5s linear;
+        transform: translateX(100px) rotate(-7.5deg);
+/*         animation: img-one 0.5s linear;
         animation-play-state: paused;
         animation-delay: calc(var(--scroll) * -1s);
         animation-iteration-count: 1;
-        animation-fill-mode: both;
+        animation-fill-mode: both; */
     }
     
     #img-two {
-        animation: img-two 0.5s linear;
+        transform: rotate(0deg) translateY(-3%);
+/*         animation: img-two 0.5s linear;
         animation-play-state: paused;
         animation-delay: calc(var(--scroll) * -1s);
         animation-iteration-count: 1;
-        animation-fill-mode: both;
+        animation-fill-mode: both; */
     }
 
     #img-three {
-        animation: img-three 0.5s linear;
+        transform: translateX(-100px) rotate(7.5deg);
+/*         animation: img-three 0.5s linear;
         animation-play-state: paused;
         animation-delay: calc(var(--scroll) * -1s);
         animation-iteration-count: 1;
-        animation-fill-mode: both;
+        animation-fill-mode: both; */
     }
 
 }

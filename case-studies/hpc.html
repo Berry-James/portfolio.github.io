@@ -90,13 +90,13 @@ My first foray into the world of single page applications.
         <article class="study-intro">
             <h2 class="subtitle"><i class="far fa-comment-alt" id=""></i>Introduction</h2>
             <p>
-<strong>Honda Performance Center</strong> (or <strong>HPC</strong>) was my first-ever full stack application.
+<strong>Honda Performance Center</strong> (or <strong>HPC</strong>) was my first-ever full stack single-page application.  
 </p>
         </article>
         <article class="study-overview">
             <h2 class="subtitle"><i class="fas fa-search"></i></i>Overview</h2>
             <p>
-<strong>HPC</strong> is designed to mimic the typical layout and functionality of many popular eCommerce platforms.  We were tasked with building a full-stack application that utilised an SPA front-end and a Mongo, Express, Node.js backend, with any subject matter of our choosing.
+<strong>HPC</strong> is designed to mimic the typical layout and functionality of many popular eCommerce platforms.  The brief involved building a full-stack application that utilised an SPA front-end and a Mongo, Express, Node.js backend, with any subject matter of our choosing.  I decided on an auto parts store, as there was already a great deal of data existing online on sites such as RockAuto that I could utilise.
 </p>
         </article>
         <div class="study-img-wrapper">
@@ -105,10 +105,10 @@ My first foray into the world of single page applications.
         <h2 class="subtitle design-title"><i class="fas fa-paint-brush"></i>Design</h2>
         <article class="study-design">
             <p>
-HPC's original design was pretty barebones.  I focused my time on perfecting the operation of the site and left little time for visual styling and aesthetics.  Upon returning to the project months later to polish it up, my laziness with my class management had come back to haunt me.  What should have been a simple task of adjusting icons, typefaces and colour palettes ended up taking far too many afternoons.  It is safe to say that my SASS organisational skills are top notch nowadays.
+HPC went through two design phases.  The first phase was relatively simple but functional.  I focused my time on perfecting the operation of the site and left little time for visual styling and aesthetics.  Upon returning to the project months later to polish it up, I chose to start from a clean slate.  I had since learnt how to use SASS, which greatly improved my workflow with the rebuild.  I took inspiration from other auto parts sites and from several website templates and began building the second iteration of HPC.
 <br>
 <br>
-With regard to design, I chose to work with a dark colour palette of greys and reds.  This fit with the whole 'Honda' thing, as many performance Honda engines are made distinct by their bright red valve cover.  I wanted to avoid clutter, but also utlise as much of the screen real estate as possible.</p>
+I chose a light colour palette as the source images being used for each part had white backgrounds - making it the obvious choice rather than painstakingly Photoshopping out the backgrounds on each image.  My chosen highlight colour of red fits with the 'Honda' aesthetic, as many performance Honda engines are made distinct by their bright red valve cover.  I wanted to avoid clutter, but also utlise as much of the screen real estate as possible.  I chose to center page content with padding on each page - this also helped with reducing visual clutter.</p>
             <div class="study-palette-container">
                 
   <div>
@@ -140,9 +140,11 @@ With regard to design, I chose to work with a dark colour palette of greys and r
         <article class="study-technical">
             
 <h3>Acquring the data</h3> 
-<p>The brief for this project was to create and store data ourselves (meaning no third-party API).  I chose to base my data around parts found on rockauto.com, a popular American car parts database.</p>
+<p>The brief for this project was to create and store data ourselves (meaning building our own RESTful API).  I chose to base my data around parts found on rockauto.com, a popular American car parts database.</p>
 <h3>Creating the shopping cart</h3>
-<p>The user's shopping cart is stored as an array of item IDs - a simple and easy solution for the time being.  Obviously when making a serious eCommerce site, it would be beneficial to keep the user's cart linked to the profile (in case they want to check out later).</p>
+<p>The user's shopping cart is stored as an array of item IDs - which is then pushed to a token held in localStorage.  This holds the user's cart whenever the page is refreshed or revisited at a later date.</p>
+<h3>User Authentication</h3>
+<p>JWTs were utilised in transferring sensitive data between the front and back end.  User data was encrypted with 'Crypto', which utilises SHA 256 hashing and a 'secret salt' of 16 random bytes.  This ensures user data is kept secure in the back end.  Furthermore, no user data is ever transferred from the backend unencrypted.</p>
 
         </article>
         <hr>
@@ -151,9 +153,9 @@ With regard to design, I chose to work with a dark colour palette of greys and r
     <section class="study-conclusion">
         <h2 class="subtitle"><i class="fas fa-scroll"></i>Final Thoughts</h2>
         <p>
-This project opened my eyes to the seemingly limitless possibilities with regard to web development.  Creating a single page application from scratch was daunting enough - let alone creating a REST API to work alongside it.  This was by far the biggest leap I had taken in web design and got me excited to see what the future will hold.
+This project opened my eyes to the seemingly limitless possibilities with regard to web development.  Creating a single page application from scratch was daunting enough - let alone creating a RESTful API to work alongside it.  This was by far the biggest leap I had taken in web design and got me excited to see what the future will hold.
 <br>
-I will continue to revisit this site and use it as a sort of 'testing ground' for new features I would like to wrap my head around before taking them to bigger and better projects.
+I will continue to revisit this site and use it as a sort of 'testing ground' for new features I would like to wrap my head around before taking them to bigger and better projects.  Recorderly, one of my later projects, used HPCs base technologies as a template.
 </p>
     </section>
 </section>

@@ -876,6 +876,10 @@ a {
   transition: 0;
 }
 
+#recorderly-color .navbar-burger i, #scitech-color .navbar-burger i, #hpc-color .navbar-burger i, #travelr-color .navbar-burger i {
+  color: #fff;
+}
+
 #recorderly-color .study-navbar, #scitech-color .study-navbar, #hpc-color .study-navbar, #travelr-color .study-navbar {
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
   height: 50px;
@@ -886,6 +890,9 @@ a {
 }
 #recorderly-color i, #recorderly-color strong {
   color: #f9b920;
+}
+#recorderly-color .navbar-burger i {
+  color: #fff;
 }
 
 #scitech-color .study-navbar {

@@ -386,6 +386,14 @@ a {
 }
 
 #recorderly-color, #scitech-color, #hpc-color, #travelr-color {
+    .navbar-burger {
+        i {
+            color: #fff;
+        }
+    }
+}
+
+#recorderly-color, #scitech-color, #hpc-color, #travelr-color {
     .study-navbar {
         box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
         height: 50px;
@@ -399,6 +407,12 @@ a {
 
     i, strong {
         color: $yellow;
+    }
+
+    .navbar-burger {
+        i {
+            color: #fff;
+        }
     }
 }
 

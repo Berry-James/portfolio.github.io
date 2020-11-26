@@ -67,28 +67,82 @@ My original designs stuck with the Scitech orange as the highlight colour, howev
 {% block technical %}
 
 <h3>Coding the interactivity</h3> 
-<p>The home-page 'slides' are manipulated via jQuery classList toggles.</p>
-<h3>Using HTML Canvas</h3>
-<p>By far the most difficult aspect of this project was coming up with the logic required to animate a HTML canvas in the way I needed.  I settled on showing a laser (the small red dot) bouncing off a series of randomly generated shapes placed in the canvas.
-Here is the code used to make this work:</p>
+<p>Each slide is manipulated using the Fullpage.js plugin.  This is an easy, responsive and backwards-compatible JS plugin that allows building slideshow-like cards and smoothly animating between them.  Each slide has a unique hash, making them linkable through a navbar or hamburger menu.</p>
+<h3>The Quiz</h3>
+<p>When rebuilding the quiz component, I chose to take a complete different route.  In this sites original form, quiz answers were stored as <code>"data_value"</code> entries inline for each possible answers, with a <code>1</code> for a correct answer and <code>0</code> for an incorrect answer.  This allowed for easy deciphering of the quiz answers upon inspecting the code in the browser.
+The revised version instead stores questions as javascript objects, which are appended to a container div.  Correct answers are stored as <code>booleans</code> and checked whenever the user presses on an answer. </p>
 <div class="code-wrapper">
-  <pre><code>
-  // Boundary Logic
- 
-  if( x<0 || x>1000) dx=-dx;
-  if( y<0 || y>800) dy=-dy;
-  if( x<xdim3+xdim4 && x>xdim3 && y<xdim1+xdim2 && y>xdim1) dx=-dx, dy=Math.floor((Math.random() * -10) + dx);
-  if( x<ydim1+ydim2 && x>ydim1 && y<ydim3+ydim4 && y>ydim3) dx=-dx, dy=Math.floor((Math.random() * -10) + dx);
+<pre><code>
+"user_collection": [
 
-  x+=dx;
-  y+=dy;
-  </code></pre>
+  "object": {
+
+    "collectionObj": {
+      "id",
+      "artistName",
+      "cover_image",
+      "discogsURL",
+      "genre",
+      "label",
+      "style",
+      "title",
+      "year"
+      },
+
+    "format": "*release format as string*" 
+
+  },
+
+]
+</code></pre>
 </div>
+<h3>The Experiment</h3>
+<p>The experiment was a completely new addition to the site, replacing the old bouncing-lasers animation that was previously featured.  A JS class and constructor were used to easily create each laser part.  The part objects were looped through and given an event listener that would set their value to 'active'.
+</p>
+
+<h3>The constructor used to generate laser parts</h3>
+<div class="code-wrapper">
+<pre><code>
+class Parts {
+    constructor(number, position, name, description, image) {
+        this.number = number;
+        this.position = position;
+        this.name = name;
+        this.description = description;
+        this.image = image;
+    }
+}
+</code></pre>
+</div>
+
+<h3>An example of a part being generated using the Parts class constructor</h3>
+<div class="code-wrapper">
+<pre><code>
+const P1 = new Parts(1, 4, 'Focussing Mirror', 'A focussing lens', './imgs/laser/parts/mirror.svg');
+</code></pre>
+</div>
+
+<h3>Looping through and adding listeners to each part item</h3>
+<div class="code-wrapper">
+<pre><code>
+part.el.addEventListener("click", () => {
+    const allParts = document.querySelectorAll('.ex-part');
+    allParts.forEach(part => {
+        part.classList.remove("ex-active");
+    })
+    part.el.classList.add("ex-active");
+    Experiment.active = part.position;
+    
+})
+</code></pre>
+</div>
+
+
 {% endblock %}
 
 {% block conclusion %}
 <p>
-My first experience with JavaScript.
+My first experience with JavaScript openep up so many opportunities for future projects.
 </p>
 {% endblock %}
 

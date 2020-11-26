@@ -1693,6 +1693,11 @@ code {
   padding: 0;
 }
 
+.email-link {
+  margin: 15px 0;
+  color: #fff;
+}
+
 .script {
   font-family: "Ubuntu Mono", monospace;
   font-size: 30px;

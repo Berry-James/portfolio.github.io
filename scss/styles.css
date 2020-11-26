@@ -916,6 +916,11 @@ a {
   color: #eb5160;
 }
 
+.sign-off-img {
+  height: 32px;
+  filter: invert(0.8);
+}
+
 .hexagon-svg .a {
   fill: #007d50;
 }
